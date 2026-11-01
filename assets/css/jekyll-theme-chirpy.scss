@@ -50,23 +50,6 @@
   margin-bottom: 0;
 }
 
-.kakau-button {
-  background: var(--c2-action-bg);
-  border-radius: var(--c2-radius-control);
-  color: var(--c2-action-fg) !important;
-  min-height: 44px;
-  align-items: center;
-  display: inline-flex;
-  font-weight: 700;
-  padding: 0.5rem 1rem;
-  text-decoration: none !important;
-}
-
-.kakau-button:hover,
-.kakau-button:focus-visible {
-  filter: brightness(0.92);
-}
-
 .kakau-academy-nav .nav-link {
   color: var(--sidebar-muted-color);
 }

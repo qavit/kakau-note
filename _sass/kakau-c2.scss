@@ -7,9 +7,11 @@
 //  * Re-point Chirpy variables first (colour, surface, link, sidebar, card). Most of the visual change
 //    comes from here, so it reaches every page type without per-page CSS.
 //  * Component rules below only handle what a variable cannot reach (type, radius, focus, nav state, touch size).
-//  * Gold (--c2-point) is decoration only: nav marker, quote rule, intro tick. Never a text colour,
-//    never a state. Links and interaction use the deep-teal accent; the primary action uses brand ink.
-//  * No theme source is modified, and no !important is used.
+//  * One hue family: the accent is a blue-teal (~197-200deg) in both modes and only lightness changes, so Light
+//    never drifts green while Dark drifts blue.
+//  * Gold (--c2-point) is decoration only: quote rule and the homepage intro tick. Never a text colour,
+//    never a state. Links and interaction use the blue-teal accent; the primary action uses brand ink.
+//  * No theme source is modified. !important appears only where a theme or MathJax rule already uses it (see below).
 
 @mixin c2-light {
   --c2-page: #f5f5f6;
@@ -21,13 +23,13 @@
   --c2-border-control: #6b7280;
   --c2-brand-ink: #0b1730;
   --c2-point: #d8951d;
-  --c2-accent: #0b6b66;
-  --c2-accent-soft: #e1f0ee;
-  --c2-accent-wash: #eef6f5;
-  --c2-focus: #0b6b66;
+  --c2-accent: #0a6590;
+  --c2-accent-soft: #e0edf6;
+  --c2-accent-wash: #eef5fa;
+  --c2-focus: #0a6590;
   --c2-action-bg: #0b1730;
   --c2-action-fg: #fff;
-  --c2-action-hover-bg: #0b6b66;
+  --c2-action-hover-bg: #0a6590;
   --c2-tag-bg: #0b17300d;
   --c2-shadow-card: 0 0 0 1px #16181d0f, 0 1px 3px #16181d0f, 0 8px 24px #16181d0a;
 
@@ -40,7 +42,7 @@
   --blockquote-border-color: var(--c2-point);
   --blockquote-text-color: var(--c2-muted);
   --link-color: var(--c2-accent);
-  --link-underline-color: #0b6b6640;
+  --link-underline-color: #0a659040;
   --button-bg: var(--c2-raised);
   --btn-border-color: var(--c2-border);
   --checkbox-checked-color: var(--c2-accent);
@@ -79,13 +81,13 @@
   --c2-border-control: #8a909c;
   --c2-brand-ink: #b7c6e6;
   --c2-point: #e3a93a;
-  --c2-accent: #5fd3cb;
-  --c2-accent-soft: #16312f;
-  --c2-accent-wash: #1a2a2a;
-  --c2-focus: #5fd3cb;
+  --c2-accent: #6bbfe8;
+  --c2-accent-soft: #142a38;
+  --c2-accent-wash: #172633;
+  --c2-focus: #6bbfe8;
   --c2-action-bg: #edeef0;
   --c2-action-fg: #101114;
-  --c2-action-hover-bg: #5fd3cb;
+  --c2-action-hover-bg: #6bbfe8;
   --c2-tag-bg: #b7c6e61a;
   --c2-shadow-card: 0 0 0 1px #ffffff14, 0 8px 24px #00000066;
 
@@ -98,7 +100,7 @@
   --blockquote-border-color: var(--c2-point);
   --blockquote-text-color: var(--c2-muted);
   --link-color: var(--c2-accent);
-  --link-underline-color: #5fd3cb55;
+  --link-underline-color: #6bbfe855;
   --button-bg: var(--c2-raised);
   --btn-border-color: var(--c2-border);
   --checkbox-checked-color: var(--c2-accent);
@@ -229,6 +231,20 @@ main h1 {
   border-radius: 2px;
 }
 
+// One action-button component (Contact, About, Academy, contextual CTAs). Base state lives here, not per page.
+.kakau-button,
+.kk-contact-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border-radius: var(--c2-radius-control);
+  background: var(--c2-action-bg);
+  color: var(--c2-action-fg) !important;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
 #main-wrapper :is(.kakau-button, .kk-contact-button):is(:hover, :focus-visible) {
   background: var(--c2-action-hover-bg);
   color: var(--c2-action-fg) !important;
@@ -246,8 +262,14 @@ main h1 {
   --bs-btn-active-color: var(--c2-page);
   --bs-btn-active-bg: var(--c2-accent);
   --bs-btn-active-border-color: var(--c2-accent);
-  --bs-btn-focus-shadow-rgb: 11, 107, 102;
+  --bs-btn-focus-shadow-rgb: 10, 101, 144;
   border-radius: var(--c2-radius-control);
+}
+
+// Chirpy's search box only recolours its border on focus; give it the same ring as every other control.
+#search:focus-within {
+  outline: 3px solid var(--c2-focus);
+  outline-offset: 2px;
 }
 
 // ---- Sidebar / topbar ------------------------------------------------------
@@ -260,14 +282,9 @@ main h1 {
   color: var(--c2-accent);
 }
 
-// Gold point as an observation marker on the current section; decoration only.
-#sidebar ul li.nav-item.active a.nav-link::after {
-  content: '';
-  margin-inline-start: auto;
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 50%;
-  background: var(--c2-point);
+// Current section: wash + accent label + a thin inset rule (a non-colour cue). No gold dot: Notes stays quiet.
+#sidebar ul li.nav-item.active a.nav-link {
+  box-shadow: inset 3px 0 0 var(--c2-accent);
 }
 
 #topbar-wrapper #breadcrumb a:hover {

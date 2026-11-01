@@ -15,22 +15,6 @@ order: 11
   margin: 1rem 0 1.5rem;
 }
 
-.kk-contact-button {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  padding: 0.55rem 1rem;
-  border-radius: var(--c2-radius-control, 4px);
-  background: var(--c2-action-bg, var(--link-color, #1e6cc8));
-  color: var(--c2-action-fg, #fff) !important;
-  font-weight: 700;
-  text-decoration: none !important;
-}
-
-.kk-contact-button:hover {
-  filter: brightness(0.94);
-}
-
 .kk-contact-note {
   color: var(--text-muted-color, #777);
   font-size: 0.9rem;
