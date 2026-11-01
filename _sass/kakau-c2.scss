@@ -22,7 +22,6 @@
   --c2-brand-ink: #0b1730;
   --c2-point: #d8951d;
   --c2-accent: #0b6b66;
-  --c2-accent-hover: #084f4b;
   --c2-accent-soft: #e1f0ee;
   --c2-accent-wash: #eef6f5;
   --c2-focus: #0b6b66;
@@ -80,7 +79,6 @@
   --c2-brand-ink: #b7c6e6;
   --c2-point: #e3a93a;
   --c2-accent: #5fd3cb;
-  --c2-accent-hover: #8fe6df;
   --c2-accent-soft: #16312f;
   --c2-accent-wash: #1a2a2a;
   --c2-focus: #5fd3cb;
@@ -217,11 +215,17 @@ main h1 {
 }
 
 // Chirpy's link hover is a hard-coded orange (%link-hover, with !important) shared by ~10 components.
-// Re-point it to the accent family. This is the second !important in the layer, for the same reason as above:
-// the theme's own rule uses it, and an ID-prefixed selector is needed to out-rank those scoped selectors.
-#main-wrapper a:hover:not(.btn, .nav-link, .page-link, .kakau-button) {
-  color: var(--c2-accent-hover) !important;
-  border-bottom-color: var(--c2-accent-hover);
+// Re-point it to the accent: the colour stays the link colour (a darker shade reads as body text), and the
+// affordance is the underline. The theme's rule uses !important and ID-scoped selectors, so this needs both too.
+#main-wrapper a:hover:not(.btn, .nav-link, .page-link, .kakau-button, .kk-contact-button) {
+  color: var(--c2-accent) !important;
+  border-bottom: 1px solid var(--c2-accent);
+}
+
+// Button-style links keep their own foreground on hover (the theme would turn the label orange).
+#main-wrapper :is(.kakau-button, .kk-contact-button):hover {
+  color: var(--c2-action-fg) !important;
+  border-bottom: 0;
 }
 
 // Bootstrap's outline-primary (e.g. the archive sort toggle) otherwise falls back to its own bright blue.
