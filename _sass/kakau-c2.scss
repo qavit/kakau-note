@@ -204,10 +204,6 @@ main h1 {
   min-width: 0 !important;
 }
 
-::selection {
-  background: var(--c2-accent-soft);
-}
-
 // ---- Interaction -----------------------------------------------------------
 :where(a, button, input, summary, [tabindex]):focus-visible {
   outline: 3px solid var(--c2-focus);
