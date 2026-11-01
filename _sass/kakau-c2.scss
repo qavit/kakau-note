@@ -1,0 +1,386 @@
+// C2 — Neutral Scientific Workbench, applied to Notes through Chirpy's own CSS variables.
+//
+// Source of truth: Notion D-053 and the Front slice (kakau-front src/styles/c2.css). Token names keep the
+// --c2-* prefix so the three sites can be compared by grep, but nothing here is shared at build time.
+//
+// Rules of this layer:
+//  * Re-point Chirpy variables first (colour, surface, link, sidebar, card). Most of the visual change
+//    comes from here, so it reaches every page type without per-page CSS.
+//  * Component rules below only handle what a variable cannot reach (type, radius, focus, nav state, touch size).
+//  * One hue family: the accent is a Blue-Teal (Light #216e84 ~193deg, Dark #9bd7dd ~185deg) from the three-site
+//    candidate palette (Front/Lab/Notes). Candidate values, not ratified tokens; measured AA on every surface used.
+//  * Gold (--c2-point) is decoration only: quote rule and the homepage intro tick. Never a text colour,
+//    never a state. Links and interaction use the blue-teal accent; the primary action uses brand ink.
+//  * No theme source is modified. !important appears only where a theme or MathJax rule already uses it (MathJax inline
+//    width, Chirpy link hover, button hover label, Chirpy outline-primary hover border) and in the reduced-motion blanket rule.
+
+@mixin c2-light {
+  --c2-page: #f5f5f6;
+  --c2-raised: #fff;
+  --c2-sunken: #ebebed;
+  --c2-text: #1f232b;
+  --c2-muted: #555b66;
+  --c2-border: #16181d1f;
+  --c2-border-control: #6b7280;
+  --c2-brand-ink: #0b1730;
+  --c2-point: #d8951d;
+  --c2-accent: #216e84;
+  --c2-accent-soft: #e4f1f3;
+  --c2-accent-wash: #eef6f7;
+  --c2-focus: #216e84;
+  --c2-action-bg: #216e84;
+  --c2-action-fg: #fff;
+  --c2-action-hover-bg: #034079;
+  --c2-tag-bg: #0b17300d;
+  --c2-shadow-card: 0 0 0 1px #16181d0f, 0 1px 3px #16181d0f, 0 8px 24px #16181d0a;
+
+  --main-bg: var(--c2-page);
+  --main-border-color: var(--c2-border);
+  --text-color: var(--c2-text);
+  --text-muted-color: var(--c2-muted);
+  --heading-color: var(--c2-brand-ink);
+  --label-color: var(--c2-muted);
+  --blockquote-border-color: var(--c2-point);
+  --blockquote-text-color: var(--c2-muted);
+  --link-color: var(--c2-accent);
+  --link-underline-color: #216e8466;
+  --button-bg: var(--c2-raised);
+  --btn-border-color: var(--c2-border);
+  --checkbox-checked-color: var(--c2-accent);
+  --sidebar-bg: var(--c2-raised);
+  --sidebar-border-color: var(--c2-border);
+  --sidebar-muted-color: var(--c2-muted);
+  --sidebar-active-color: var(--c2-accent);
+  --sidebar-hover-bg: #16181d0a;
+  --sidebar-btn-bg: var(--c2-raised);
+  --site-title-color: var(--c2-brand-ink);
+  --site-subtitle-color: var(--c2-muted);
+  --topbar-bg: #f5f5f6cc;
+  --topbar-text-color: var(--c2-muted);
+  --search-border-color: var(--c2-border-control);
+  --search-icon-color: var(--c2-muted);
+  --input-focus-border-color: var(--c2-accent);
+  --toc-highlight: var(--c2-accent);
+  --btn-share-hover-color: var(--c2-accent);
+  --card-bg: var(--c2-raised);
+  --card-hover-bg: var(--c2-accent-wash);
+  --card-shadow: var(--c2-shadow-card);
+  --tag-border: var(--c2-border);
+  --tag-hover: var(--c2-accent-soft);
+  --footnote-target-bg: var(--c2-accent-soft);
+  --tb-odd-bg: #f9f9fa;
+  --tb-border-color: var(--c2-border);
+  --inline-code-bg: var(--c2-tag-bg);
+}
+
+@mixin c2-dark {
+  --c2-page: #101114;
+  --c2-raised: #1a1c21;
+  --c2-sunken: #0b0c0e;
+  --c2-text: #d4d7dd;
+  --c2-muted: #a5aab4;
+  --c2-border: #ffffff1f;
+  --c2-border-control: #8a909c;
+  --c2-brand-ink: #b7c6e6;
+  --c2-point: #e3a93a;
+  --c2-accent: #9bd7dd;
+  --c2-accent-soft: #173139;
+  --c2-accent-wash: #1a2c32;
+  --c2-focus: #9bd7dd;
+  --c2-action-bg: #9bd7dd;
+  --c2-action-fg: #101114;
+  --c2-action-hover-bg: #c5e7eb;
+  --c2-tag-bg: #b7c6e61a;
+  --c2-shadow-card: 0 0 0 1px #ffffff14, 0 8px 24px #00000066;
+
+  --main-bg: var(--c2-page);
+  --main-border-color: var(--c2-border);
+  --text-color: var(--c2-text);
+  --text-muted-color: var(--c2-muted);
+  --heading-color: var(--c2-brand-ink);
+  --label-color: var(--c2-muted);
+  --blockquote-border-color: var(--c2-point);
+  --blockquote-text-color: var(--c2-muted);
+  --link-color: var(--c2-accent);
+  --link-underline-color: #9bd7dd66;
+  --button-bg: var(--c2-raised);
+  --btn-border-color: var(--c2-border);
+  --checkbox-checked-color: var(--c2-accent);
+  --sidebar-bg: var(--c2-raised);
+  --sidebar-border-color: var(--c2-border);
+  --sidebar-muted-color: var(--c2-muted);
+  --sidebar-active-color: var(--c2-accent);
+  --sidebar-hover-bg: #ffffff0f;
+  --sidebar-btn-bg: var(--c2-raised);
+  --site-title-color: var(--c2-brand-ink);
+  --site-subtitle-color: var(--c2-muted);
+  --topbar-bg: #101114cc;
+  --topbar-text-color: var(--c2-muted);
+  --search-border-color: var(--c2-border-control);
+  --search-icon-color: var(--c2-muted);
+  --input-focus-border-color: var(--c2-accent);
+  --toc-highlight: var(--c2-accent);
+  --btn-share-hover-color: var(--c2-accent);
+  --card-bg: var(--c2-raised);
+  --card-hover-bg: var(--c2-accent-wash);
+  --card-shadow: var(--c2-shadow-card);
+  --tag-border: var(--c2-border);
+  --tag-hover: var(--c2-accent-soft);
+  --footnote-target-bg: var(--c2-accent-soft);
+  --tb-odd-bg: #1f2126;
+  --tb-even-bg: var(--c2-raised);
+  --tb-border-color: var(--c2-border);
+  --inline-code-bg: var(--c2-tag-bg);
+}
+
+// Same three entry points Chirpy uses: explicit light, explicit dark, and no choice yet (follow the OS).
+:root[data-bs-theme='light'],
+:root:not([data-bs-theme]) {
+  @include c2-light;
+}
+
+:root[data-bs-theme='dark'] {
+  @include c2-dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-bs-theme]) {
+    @include c2-dark;
+  }
+}
+
+:root {
+  --c2-radius-control: 10px;
+  --c2-radius-card: 14px;
+  // Taiwan-first CJK fallbacks. Chirpy's default falls to Microsoft YaHei (Simplified-first) on Windows.
+  --c2-cjk: 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', 'Heiti TC';
+}
+
+// ---- Type -----------------------------------------------------------------
+body {
+  font-family: 'Source Sans Pro', var(--c2-cjk), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Lato, var(--c2-cjk), sans-serif;
+  color: var(--heading-color);
+}
+
+main h1 {
+  line-height: 1.3;
+  letter-spacing: 0.005em;
+  font-weight: 700;
+}
+
+.content {
+  line-height: 1.75;
+  text-autospace: normal;
+}
+
+.content h2,
+.content h3 {
+  line-height: 1.4;
+}
+
+// Display equations wider than the column scroll inside their own box instead of widening the page on phones.
+// Container-level CSS only; MathJax output and macros are untouched.
+.content mjx-container[display='true'] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  // MathJax writes the equation's natural width into an inline min-width, which beats max-width.
+  // !important here exists only to defeat that inline style.
+  min-width: 0 !important;
+}
+
+// ---- Interaction -----------------------------------------------------------
+:where(a, button, input, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--c2-focus);
+  outline-offset: 3px;
+}
+
+// Bootstrap's controls set outline: 0 and draw their own ring; keep one consistent, visible ring instead.
+:is(.btn, .nav-link, .page-link, .dropdown-item):focus-visible {
+  outline: 3px solid var(--c2-focus);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+// Hover language (one system, three levels). Chirpy hard-codes an orange hover with !important on ~10 components,
+// which is why the rules below need !important and an ID-scoped selector to out-rank it.
+//  * Text link: stays the accent, keeps its underline and (inline prose links only) gains a soft accent wash.
+//  * Action button (navy / pale ink): shifts to the accent fill; label colour is set per theme for contrast.
+//  * Card / list row: accent-wash background (already mapped through --card-hover-bg).
+#main-wrapper a:hover:not(.btn, .nav-link, .page-link, .kakau-button, .kk-contact-button),
+#topbar-wrapper #breadcrumb a:hover {
+  color: var(--c2-accent) !important;
+  border-bottom-color: var(--c2-accent);
+}
+
+// The wash is for inline text links only. Cards, chips and tags keep their own shape and hover (border / fill).
+#main-wrapper .content :is(p, li, dd, td, blockquote) a:not([class]):hover,
+#main-wrapper :is(.card-header, #toc-wrapper, #access-lastmod, footer) a:not(.kk-notes-footer-brand):hover,
+#topbar-wrapper #breadcrumb a:hover {
+  background: var(--c2-accent-soft);
+  box-shadow: 0 0 0 0.12em var(--c2-accent-soft);
+  border-radius: 2px;
+}
+
+// One action-button component (Contact, About, Academy, contextual CTAs). Base state lives here, not per page.
+#main-wrapper .kakau-button,
+#main-wrapper .kk-contact-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border-radius: var(--c2-radius-control);
+  background: var(--c2-action-bg);
+  color: var(--c2-action-fg);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#main-wrapper :is(.kakau-button, .kk-contact-button):is(:hover, :focus-visible) {
+  background: var(--c2-action-hover-bg);
+  // Fill shift plus a soft halo, so hover is not only a hue change.
+  box-shadow: 0 0 0 3px var(--c2-accent-soft);
+  color: var(--c2-action-fg) !important;
+  border-bottom: 0;
+  filter: none;
+}
+
+// Bootstrap's outline-primary (e.g. the archive sort toggle) otherwise falls back to its own bright blue.
+.btn-outline-primary {
+  --bs-btn-color: var(--c2-accent);
+  --bs-btn-border-color: var(--c2-accent);
+  --bs-btn-hover-color: var(--c2-page);
+  --bs-btn-hover-bg: var(--c2-accent);
+  --bs-btn-hover-border-color: var(--c2-accent);
+  --bs-btn-active-color: var(--c2-page);
+  --bs-btn-active-bg: var(--c2-accent);
+  --bs-btn-active-border-color: var(--c2-accent);
+  --bs-btn-focus-shadow-rgb: 33, 110, 132;
+  border-radius: var(--c2-radius-control);
+}
+
+// Chirpy forces a bright blue border on hover with !important; re-point it to the accent.
+.btn.btn-outline-primary:not(.disabled):hover {
+  border-color: var(--c2-accent) !important;
+}
+
+// Chirpy's search box only recolours its border on focus; give it the same ring as every other control.
+#search:focus-within {
+  outline: 3px solid var(--c2-focus);
+  outline-offset: 2px;
+}
+
+// ---- Sidebar / topbar ------------------------------------------------------
+#sidebar {
+  border-inline-end: 1px solid var(--sidebar-border-color);
+}
+
+#sidebar ul li.nav-item.active a.nav-link {
+  background: var(--c2-accent-soft);
+  color: var(--c2-accent);
+}
+
+// Current section: wash + accent label + a thin inset rule (a non-colour cue). No gold dot: Notes stays quiet.
+#sidebar ul li.nav-item.active a.nav-link {
+  box-shadow: inset 3px 0 0 var(--c2-accent);
+}
+
+// ---- Surfaces --------------------------------------------------------------
+.post-preview,
+.post-preview::before,
+.categories.card,
+#related-posts .card {
+  border-radius: var(--c2-radius-card);
+}
+
+// Post cards (home list, related posts). Chirpy's hover is a 30%-opacity overlay that sits on top of the text, so it
+// barely shows and washes the title out. Replace it with the C2 card hover: accent ring and wash, no overlay.
+// The title colour is left alone: Chirpy pins it with !important on the home list.
+.post-preview::before {
+  display: none;
+}
+
+.post-preview {
+  transition: box-shadow 0.15s ease;
+}
+
+.post-preview:hover {
+  box-shadow: 0 0 0 1px var(--c2-accent), var(--c2-shadow-card);
+  background: var(--c2-accent-wash);
+}
+
+.post-tag {
+  border-radius: var(--c2-radius-control);
+  padding-block: 0.15rem;
+}
+
+// Current page in pagination. Chirpy only fills it with a near-page-coloured pill (about 1.1:1);
+// add weight and an inset rule so "current" does not depend on a faint fill or on hue alone.
+.page-item.active .page-link {
+  color: var(--c2-accent);
+  font-weight: 700;
+  box-shadow: inset 0 -2px 0 var(--c2-accent);
+}
+
+// ---- Touch targets (phone widths) ------------------------------------------
+@media (max-width: 849px) {
+  #sidebar-trigger,
+  #search-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  #sidebar ul li.nav-item a.nav-link {
+    min-height: 44px;
+  }
+
+  .kk-notes-mobile-mark,
+  .page-link {
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  #sidebar .sidebar-bottom .btn,
+  #sidebar .sidebar-bottom a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+// Reduced motion: no fades, slides or smooth scrolling. Chirpy's own transitions (logo swap, mode toggle, search,
+// heading anchors, back-to-top, panel slide) are ID- or class-scoped, so a per-selector list kept losing; this is the
+// standard blanket rule, and !important is the point of it.
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0s !important;
+    transition-duration: 0.01ms !important;
+  }
+}
