@@ -22,6 +22,7 @@
   --c2-brand-ink: #0b1730;
   --c2-point: #d8951d;
   --c2-accent: #0b6b66;
+  --c2-accent-hover: #084f4b;
   --c2-accent-soft: #e1f0ee;
   --c2-accent-wash: #eef6f5;
   --c2-focus: #0b6b66;
@@ -79,6 +80,7 @@
   --c2-brand-ink: #b7c6e6;
   --c2-point: #e3a93a;
   --c2-accent: #5fd3cb;
+  --c2-accent-hover: #8fe6df;
   --c2-accent-soft: #16312f;
   --c2-accent-wash: #1a2a2a;
   --c2-focus: #5fd3cb;
@@ -212,6 +214,28 @@ main h1 {
   outline: 3px solid var(--c2-focus);
   outline-offset: 2px;
   box-shadow: none;
+}
+
+// Chirpy's link hover is a hard-coded orange (%link-hover, with !important) shared by ~10 components.
+// Re-point it to the accent family. This is the second !important in the layer, for the same reason as above:
+// the theme's own rule uses it, and an ID-prefixed selector is needed to out-rank those scoped selectors.
+#main-wrapper a:hover:not(.btn, .nav-link, .page-link, .kakau-button) {
+  color: var(--c2-accent-hover) !important;
+  border-bottom-color: var(--c2-accent-hover);
+}
+
+// Bootstrap's outline-primary (e.g. the archive sort toggle) otherwise falls back to its own bright blue.
+.btn-outline-primary {
+  --bs-btn-color: var(--c2-accent);
+  --bs-btn-border-color: var(--c2-accent);
+  --bs-btn-hover-color: var(--c2-page);
+  --bs-btn-hover-bg: var(--c2-accent);
+  --bs-btn-hover-border-color: var(--c2-accent);
+  --bs-btn-active-color: var(--c2-page);
+  --bs-btn-active-bg: var(--c2-accent);
+  --bs-btn-active-border-color: var(--c2-accent);
+  --bs-btn-focus-shadow-rgb: 11, 107, 102;
+  border-radius: var(--c2-radius-control);
 }
 
 // ---- Sidebar / topbar ------------------------------------------------------
