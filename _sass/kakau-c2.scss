@@ -308,6 +308,22 @@ main h1 {
   border-radius: var(--c2-radius-card);
 }
 
+// Post cards (home list, related posts). Chirpy's hover is a 30%-opacity overlay that sits on top of the text, so it
+// barely shows and washes the title out. Replace it with the C2 card hover: accent ring and wash, no overlay.
+// The title colour is left alone: Chirpy pins it with !important on the home list.
+.post-preview::before {
+  display: none;
+}
+
+.post-preview {
+  transition: box-shadow 0.15s ease;
+}
+
+.post-preview:hover {
+  box-shadow: 0 0 0 1px var(--c2-accent), var(--c2-shadow-card);
+  background: var(--c2-accent-wash);
+}
+
 .post-tag {
   border-radius: var(--c2-radius-control);
   padding-block: 0.15rem;
