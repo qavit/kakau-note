@@ -220,12 +220,16 @@ main h1 {
 
 // Hover language (one system, three levels). Chirpy hard-codes an orange hover with !important on ~10 components,
 // which is why the rules below need !important and an ID-scoped selector to out-rank it.
-//  * Text link: stays the accent, gains a solid underline and a soft accent wash (no layout shift).
+//  * Text link: stays the accent, keeps its underline and (inline prose links only) gains a soft accent wash.
 //  * Action button (navy / pale ink): shifts to the accent fill; label colour is set per theme for contrast.
 //  * Card / list row: accent-wash background (already mapped through --card-hover-bg).
 #main-wrapper a:hover:not(.btn, .nav-link, .page-link, .kakau-button, .kk-contact-button) {
   color: var(--c2-accent) !important;
-  border-bottom: 1px solid var(--c2-accent);
+  border-bottom-color: var(--c2-accent);
+}
+
+// The wash is for inline text links only. Cards, chips and tags keep their own shape and hover (border / fill).
+#main-wrapper .content :is(p, li, dd, td, blockquote) a:not([class]):hover {
   background: var(--c2-accent-soft);
   box-shadow: 0 0 0 0.12em var(--c2-accent-soft);
   border-radius: 2px;
@@ -264,6 +268,11 @@ main h1 {
   --bs-btn-active-border-color: var(--c2-accent);
   --bs-btn-focus-shadow-rgb: 10, 101, 144;
   border-radius: var(--c2-radius-control);
+}
+
+// Chirpy forces a bright blue border on hover with !important; re-point it to the accent.
+.btn.btn-outline-primary:not(.disabled):hover {
+  border-color: var(--c2-accent) !important;
 }
 
 // Chirpy's search box only recolours its border on focus; give it the same ring as every other control.
