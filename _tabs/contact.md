@@ -16,11 +16,13 @@ order: 11
 }
 
 .kk-contact-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   padding: 0.55rem 1rem;
-  border-radius: 4px;
-  background: var(--link-color, #1e6cc8);
-  color: #fff !important;
+  border-radius: var(--c2-radius-control, 4px);
+  background: var(--c2-action-bg, var(--link-color, #1e6cc8));
+  color: var(--c2-action-fg, #fff) !important;
   font-weight: 700;
   text-decoration: none !important;
 }

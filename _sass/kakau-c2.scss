@@ -1,0 +1,296 @@
+// C2 — Neutral Scientific Workbench, applied to Notes through Chirpy's own CSS variables.
+//
+// Source of truth: Notion D-053 and the Front slice (kakau-front src/styles/c2.css). Token names keep the
+// --c2-* prefix so the three sites can be compared by grep, but nothing here is shared at build time.
+//
+// Rules of this layer:
+//  * Re-point Chirpy variables first (colour, surface, link, sidebar, card). Most of the visual change
+//    comes from here, so it reaches every page type without per-page CSS.
+//  * Component rules below only handle what a variable cannot reach (type, radius, focus, nav state, touch size).
+//  * Gold (--c2-point) is decoration only: nav marker, quote rule, intro tick. Never a text colour,
+//    never a state. Links and interaction use the deep-teal accent; the primary action uses brand ink.
+//  * No theme source is modified, and no !important is used.
+
+@mixin c2-light {
+  --c2-page: #f5f5f6;
+  --c2-raised: #fff;
+  --c2-sunken: #ebebed;
+  --c2-text: #1f232b;
+  --c2-muted: #555b66;
+  --c2-border: #16181d1f;
+  --c2-border-control: #6b7280;
+  --c2-brand-ink: #0b1730;
+  --c2-point: #d8951d;
+  --c2-accent: #0b6b66;
+  --c2-accent-soft: #e1f0ee;
+  --c2-accent-wash: #eef6f5;
+  --c2-focus: #0b6b66;
+  --c2-action-bg: #0b1730;
+  --c2-action-fg: #fff;
+  --c2-tag-bg: #0b17300d;
+  --c2-shadow-card: 0 0 0 1px #16181d0f, 0 1px 3px #16181d0f, 0 8px 24px #16181d0a;
+
+  --main-bg: var(--c2-page);
+  --main-border-color: var(--c2-border);
+  --text-color: var(--c2-text);
+  --text-muted-color: var(--c2-muted);
+  --heading-color: var(--c2-brand-ink);
+  --label-color: var(--c2-muted);
+  --blockquote-border-color: var(--c2-point);
+  --blockquote-text-color: var(--c2-muted);
+  --link-color: var(--c2-accent);
+  --link-underline-color: #0b6b6640;
+  --button-bg: var(--c2-raised);
+  --btn-border-color: var(--c2-border);
+  --checkbox-checked-color: var(--c2-accent);
+  --sidebar-bg: var(--c2-raised);
+  --sidebar-border-color: var(--c2-border);
+  --sidebar-muted-color: var(--c2-muted);
+  --sidebar-active-color: var(--c2-accent);
+  --sidebar-hover-bg: #16181d0a;
+  --sidebar-btn-bg: var(--c2-raised);
+  --site-title-color: var(--c2-brand-ink);
+  --site-subtitle-color: var(--c2-muted);
+  --topbar-bg: #f5f5f6cc;
+  --topbar-text-color: var(--c2-muted);
+  --search-border-color: var(--c2-border);
+  --input-focus-border-color: var(--c2-accent);
+  --toc-highlight: var(--c2-accent);
+  --btn-share-hover-color: var(--c2-accent);
+  --card-bg: var(--c2-raised);
+  --card-hover-bg: var(--c2-accent-wash);
+  --card-shadow: var(--c2-shadow-card);
+  --tag-border: var(--c2-border);
+  --tag-hover: var(--c2-accent-soft);
+  --footnote-target-bg: var(--c2-accent-soft);
+  --tb-odd-bg: #f9f9fa;
+  --tb-border-color: var(--c2-border);
+  --inline-code-bg: var(--c2-tag-bg);
+}
+
+@mixin c2-dark {
+  --c2-page: #101114;
+  --c2-raised: #1a1c21;
+  --c2-sunken: #0b0c0e;
+  --c2-text: #d4d7dd;
+  --c2-muted: #a5aab4;
+  --c2-border: #ffffff1f;
+  --c2-border-control: #8a909c;
+  --c2-brand-ink: #b7c6e6;
+  --c2-point: #e3a93a;
+  --c2-accent: #5fd3cb;
+  --c2-accent-soft: #16312f;
+  --c2-accent-wash: #1a2a2a;
+  --c2-focus: #5fd3cb;
+  --c2-action-bg: #edeef0;
+  --c2-action-fg: #101114;
+  --c2-tag-bg: #b7c6e61a;
+  --c2-shadow-card: 0 0 0 1px #ffffff14, 0 8px 24px #00000066;
+
+  --main-bg: var(--c2-page);
+  --main-border-color: var(--c2-border);
+  --text-color: var(--c2-text);
+  --text-muted-color: var(--c2-muted);
+  --heading-color: var(--c2-brand-ink);
+  --label-color: var(--c2-muted);
+  --blockquote-border-color: var(--c2-point);
+  --blockquote-text-color: var(--c2-muted);
+  --link-color: var(--c2-accent);
+  --link-underline-color: #5fd3cb55;
+  --button-bg: var(--c2-raised);
+  --btn-border-color: var(--c2-border);
+  --checkbox-checked-color: var(--c2-accent);
+  --sidebar-bg: var(--c2-raised);
+  --sidebar-border-color: var(--c2-border);
+  --sidebar-muted-color: var(--c2-muted);
+  --sidebar-active-color: var(--c2-accent);
+  --sidebar-hover-bg: #ffffff0f;
+  --sidebar-btn-bg: var(--c2-raised);
+  --site-title-color: var(--c2-brand-ink);
+  --site-subtitle-color: var(--c2-muted);
+  --topbar-bg: #101114cc;
+  --topbar-text-color: var(--c2-muted);
+  --search-border-color: var(--c2-border);
+  --input-focus-border-color: var(--c2-accent);
+  --toc-highlight: var(--c2-accent);
+  --btn-share-hover-color: var(--c2-accent);
+  --card-bg: var(--c2-raised);
+  --card-hover-bg: var(--c2-accent-wash);
+  --card-shadow: var(--c2-shadow-card);
+  --tag-border: var(--c2-border);
+  --tag-hover: var(--c2-accent-soft);
+  --footnote-target-bg: var(--c2-accent-soft);
+  --tb-odd-bg: #1f2126;
+  --tb-even-bg: var(--c2-raised);
+  --tb-border-color: var(--c2-border);
+  --inline-code-bg: var(--c2-tag-bg);
+}
+
+// Same three entry points Chirpy uses: explicit light, explicit dark, and no choice yet (follow the OS).
+:root[data-bs-theme='light'],
+:root:not([data-bs-theme]) {
+  @include c2-light;
+}
+
+:root[data-bs-theme='dark'] {
+  @include c2-dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-bs-theme]) {
+    @include c2-dark;
+  }
+}
+
+:root {
+  --c2-radius-control: 10px;
+  --c2-radius-card: 14px;
+  // Taiwan-first CJK fallbacks. Chirpy's default falls to Microsoft YaHei (Simplified-first) on Windows.
+  --c2-cjk: 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', 'Heiti TC';
+}
+
+// ---- Type -----------------------------------------------------------------
+body {
+  font-family: 'Source Sans Pro', var(--c2-cjk), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Lato, var(--c2-cjk), sans-serif;
+  color: var(--heading-color);
+}
+
+main h1 {
+  line-height: 1.3;
+  letter-spacing: 0.005em;
+  font-weight: 700;
+}
+
+.content {
+  line-height: 1.75;
+  text-autospace: normal;
+}
+
+.content h2,
+.content h3 {
+  line-height: 1.4;
+}
+
+// Display equations wider than the column scroll inside their own box instead of widening the page on phones.
+// Container-level CSS only; MathJax output and macros are untouched.
+.content mjx-container[display='true'] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  // MathJax writes the equation's natural width into an inline min-width, which beats max-width.
+  // This is the one !important in the layer: it exists only to defeat that inline style.
+  min-width: 0 !important;
+}
+
+::selection {
+  background: var(--c2-accent-soft);
+}
+
+// ---- Interaction -----------------------------------------------------------
+:where(a, button, input, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--c2-focus);
+  outline-offset: 3px;
+}
+
+// Bootstrap's controls set outline: 0 and draw their own ring; keep one consistent, visible ring instead.
+:is(.btn, .nav-link, .page-link, .dropdown-item):focus-visible {
+  outline: 3px solid var(--c2-focus);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+// ---- Sidebar / topbar ------------------------------------------------------
+#sidebar {
+  border-inline-end: 1px solid var(--sidebar-border-color);
+}
+
+#sidebar ul li.nav-item.active a.nav-link {
+  background: var(--c2-accent-soft);
+  color: var(--c2-accent);
+}
+
+// Gold point as an observation marker on the current section; decoration only.
+#sidebar ul li.nav-item.active a.nav-link::after {
+  content: '';
+  margin-inline-start: auto;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--c2-point);
+}
+
+#topbar-wrapper #breadcrumb a:hover {
+  color: var(--c2-accent);
+}
+
+// ---- Surfaces --------------------------------------------------------------
+.post-preview,
+.post-preview::before,
+.categories.card,
+#related-posts .card {
+  border-radius: var(--c2-radius-card);
+}
+
+.post-tag {
+  border-radius: var(--c2-radius-control);
+  padding-block: 0.15rem;
+}
+
+// ---- Touch targets (phone widths) ------------------------------------------
+@media (max-width: 849px) {
+  #sidebar-trigger,
+  #search-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  #sidebar ul li.nav-item a.nav-link {
+    min-height: 44px;
+  }
+
+  .kk-notes-mobile-mark,
+  .page-link {
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  #sidebar .sidebar-bottom .btn,
+  #sidebar .sidebar-bottom a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a,
+  .nav-link,
+  .btn,
+  .page-link,
+  .post-preview,
+  .post-tag {
+    transition: none;
+  }
+}
