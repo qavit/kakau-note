@@ -27,6 +27,7 @@
   --c2-focus: #0b6b66;
   --c2-action-bg: #0b1730;
   --c2-action-fg: #fff;
+  --c2-action-hover-bg: #0b6b66;
   --c2-tag-bg: #0b17300d;
   --c2-shadow-card: 0 0 0 1px #16181d0f, 0 1px 3px #16181d0f, 0 8px 24px #16181d0a;
 
@@ -84,6 +85,7 @@
   --c2-focus: #5fd3cb;
   --c2-action-bg: #edeef0;
   --c2-action-fg: #101114;
+  --c2-action-hover-bg: #5fd3cb;
   --c2-tag-bg: #b7c6e61a;
   --c2-shadow-card: 0 0 0 1px #ffffff14, 0 8px 24px #00000066;
 
@@ -214,18 +216,24 @@ main h1 {
   box-shadow: none;
 }
 
-// Chirpy's link hover is a hard-coded orange (%link-hover, with !important) shared by ~10 components.
-// Re-point it to the accent: the colour stays the link colour (a darker shade reads as body text), and the
-// affordance is the underline. The theme's rule uses !important and ID-scoped selectors, so this needs both too.
+// Hover language (one system, three levels). Chirpy hard-codes an orange hover with !important on ~10 components,
+// which is why the rules below need !important and an ID-scoped selector to out-rank it.
+//  * Text link: stays the accent, gains a solid underline and a soft accent wash (no layout shift).
+//  * Action button (navy / pale ink): shifts to the accent fill; label colour is set per theme for contrast.
+//  * Card / list row: accent-wash background (already mapped through --card-hover-bg).
 #main-wrapper a:hover:not(.btn, .nav-link, .page-link, .kakau-button, .kk-contact-button) {
   color: var(--c2-accent) !important;
   border-bottom: 1px solid var(--c2-accent);
+  background: var(--c2-accent-soft);
+  box-shadow: 0 0 0 0.12em var(--c2-accent-soft);
+  border-radius: 2px;
 }
 
-// Button-style links keep their own foreground on hover (the theme would turn the label orange).
-#main-wrapper :is(.kakau-button, .kk-contact-button):hover {
+#main-wrapper :is(.kakau-button, .kk-contact-button):is(:hover, :focus-visible) {
+  background: var(--c2-action-hover-bg);
   color: var(--c2-action-fg) !important;
   border-bottom: 0;
+  filter: none;
 }
 
 // Bootstrap's outline-primary (e.g. the archive sort toggle) otherwise falls back to its own bright blue.
