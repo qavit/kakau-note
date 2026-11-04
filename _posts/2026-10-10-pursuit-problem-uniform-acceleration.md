@@ -34,8 +34,8 @@ $$\require{physics}$$
 | 賊車位置（小格） | 0 | 4 | 12 | 24 |
 | 警車 ÷ 賊車 | — | 5/4 | 5/4 | 5/4 |
 
-![依題目軌跡圖重畫：賊車與警車每秒的位置](/assets/img/posts/police-chase-uniform-acceleration/trajectory-zh-light.svg){: .light w="760" }
-![依題目軌跡圖重畫：賊車與警車每秒的位置](/assets/img/posts/police-chase-uniform-acceleration/trajectory-zh-dark.svg){: .dark w="760" }
+![依題目軌跡圖重畫：賊車與警車每秒的位置](/assets/img/posts/pursuit-problem-uniform-acceleration/trajectory-zh-light.svg){: .light w="760" }
+![依題目軌跡圖重畫：賊車與警車每秒的位置](/assets/img/posts/pursuit-problem-uniform-acceleration/trajectory-zh-dark.svg){: .dark w="760" }
 
 **圖 1：** 依上表重畫的軌跡圖（1 小格 = 2 m）。兩列起點對齊，每個點上方標示時間；任一時刻警車距離都是賊車的 $\frac{5}{4}$ 倍。
 {: .fig-caption }
@@ -60,8 +60,8 @@ $$\text{警車路程} = 5 \times 36 = 180\ \text{m},\qquad \text{賊車路程} =
 
 這個方法沒有用到加速度、時間，連「1 格 = 2 公尺」都沒用到。
 
-![比例速解：警車跑 5 份、賊車跑 4 份，差 1 份就是 36 公尺](/assets/img/posts/police-chase-uniform-acceleration/ratio-parts-zh-light.svg){: .light w="900" }
-![比例速解：警車跑 5 份、賊車跑 4 份，差 1 份就是 36 公尺](/assets/img/posts/police-chase-uniform-acceleration/ratio-parts-zh-dark.svg){: .dark w="900" }
+![比例速解：警車跑 5 份、賊車跑 4 份，差 1 份就是 36 公尺](/assets/img/posts/pursuit-problem-uniform-acceleration/ratio-parts-zh-light.svg){: .light w="900" }
+![比例速解：警車跑 5 份、賊車跑 4 份，差 1 份就是 36 公尺](/assets/img/posts/pursuit-problem-uniform-acceleration/ratio-parts-zh-dark.svg){: .dark w="900" }
 
 **圖 2：** 把路程切成「份」。賊車一開始領先 1 份（36 m），追上時警車跑 5 份、賊車跑 4 份，兩車在同一點相遇。
 {: .fig-caption }
@@ -105,8 +105,8 @@ $$x_{\text{警}}=10t^2=10\times18=180\ \text{m}$$
 
 答案同樣是 180 m。這個方法比較長，但它還求出了**追上的時間**，這是比例法給不了的資訊。
 
-![兩車位置對時間的圖，兩條曲線交在 t≈4.24 秒、位置 180 公尺](/assets/img/posts/police-chase-uniform-acceleration/x-t-zh-light.svg){: .light w="760" }
-![兩車位置對時間的圖，兩條曲線交在 t≈4.24 秒、位置 180 公尺](/assets/img/posts/police-chase-uniform-acceleration/x-t-zh-dark.svg){: .dark w="760" }
+![兩車位置對時間的圖，兩條曲線交在 t≈4.24 秒、位置 180 公尺](/assets/img/posts/pursuit-problem-uniform-acceleration/x-t-zh-light.svg){: .light w="760" }
+![兩車位置對時間的圖，兩條曲線交在 t≈4.24 秒、位置 180 公尺](/assets/img/posts/pursuit-problem-uniform-acceleration/x-t-zh-dark.svg){: .dark w="760" }
 
 **圖 3：** 兩車的 $x$–$t$ 圖（以警車起點為原點）。賊車從 36 m 處出發，兩條曲線的交點就是「位置相同」，也就是追上。
 {: .fig-caption }
@@ -140,8 +140,8 @@ $$\frac{1}{2}\times t\times 4t=36\quad\Rightarrow\quad t^2=18$$
 
 警車路程就是警車那條線下的三角形面積：$\frac{1}{2}\times t\times 20t=10t^2=180$ m。
 
-![兩車速度對時間的圖，兩條直線之間的三角形面積為 36 公尺](/assets/img/posts/police-chase-uniform-acceleration/v-t-zh-light.svg){: .light w="760" }
-![兩車速度對時間的圖，兩條直線之間的三角形面積為 36 公尺](/assets/img/posts/police-chase-uniform-acceleration/v-t-zh-dark.svg){: .dark w="760" }
+![兩車速度對時間的圖，兩條直線之間的三角形面積為 36 公尺](/assets/img/posts/pursuit-problem-uniform-acceleration/v-t-zh-light.svg){: .light w="760" }
+![兩車速度對時間的圖，兩條直線之間的三角形面積為 36 公尺](/assets/img/posts/pursuit-problem-uniform-acceleration/v-t-zh-dark.svg){: .dark w="760" }
 
 **圖 4：** 兩車的 $v$–$t$ 圖。兩條直線之間、到追上時刻為止的三角形面積是 36 m，正好是警車要補回的起始差距。
 {: .fig-caption }

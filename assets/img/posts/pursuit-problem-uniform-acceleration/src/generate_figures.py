@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the SVG figures for the police-chase (追趕問題) post.
+"""Generate the SVG figures for the pursuit-problem (追趕問題) post.
 
 Styled with the Notes C2 tokens (see _sass/kakau-c2.scss): neutral surface card with a
 hairline border and 14px radius, blue-teal accent for the protagonist (警車), neutral grey
@@ -7,7 +7,7 @@ for the other car, brand ink for text, and gold only as a small decorative mark.
 An <img> SVG cannot read page CSS variables, so the values are copied here; keep them in
 sync with kakau-c2.scss if the palette changes.
 
-    python3 assets/img/posts/police-chase-uniform-acceleration/src/generate_figures.py
+    python3 assets/img/posts/pursuit-problem-uniform-acceleration/src/generate_figures.py
 """
 
 from __future__ import annotations
@@ -131,7 +131,7 @@ def kcolor(c, kind):
 
 # 圖 1：重繪的軌跡圖（警車 0, 5, 15, 30 小格；賊車 0, 4, 12, 24 小格）
 def fig_trajectory(c):
-    w, h = 960, 380
+    w, h = 960, 410
     x0, cell, cells = 150, 22, 34
     top, bottom = 84, 300
     rows = {"賊車": (150, [0, 4, 12, 24], "thief"), "警車": (240, [0, 5, 15, 30], "police")}
