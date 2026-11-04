@@ -328,12 +328,12 @@ main h1 {
   padding-block: 0.15rem;
 }
 
-// Current page in pagination. Chirpy only fills it with a near-page-coloured pill (about 1.1:1);
-// add weight and an inset rule so "current" does not depend on a faint fill or on hue alone.
+// Current page in pagination. Chirpy's own fill is near the page colour (about 1.1:1), so set the accent wash
+// explicitly and add weight; "current" then does not depend on hue alone. No underline rule. Radius and spacing stay Chirpy's.
 .page-item.active .page-link {
+  background-color: var(--c2-accent-soft);
   color: var(--c2-accent);
-  font-weight: 700;
-  box-shadow: inset 0 -2px 0 var(--c2-accent);
+  font-weight: 600;
 }
 
 // ---- Touch targets (phone widths) ------------------------------------------
