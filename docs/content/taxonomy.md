@@ -8,13 +8,19 @@ correct; update `AGENTS.md`'s pointer text, not this file, to match.
 ## Rule
 
 Every post's `categories` front matter uses exactly two levels: a top-level
-subject area, then a sub-area. Only four top-level values exist for Chinese
+subject area, then a sub-area. Only five top-level values exist for Chinese
 content:
 
-`高中數學`、`高中物理`、`大學數學`、`大學物理`
+`國中理化`、`高中數學`、`高中物理`、`大學數學`、`大學物理`
 
-Do not invent a fifth top-level category for a new post. If a topic doesn't
-fit one of the four, that's a signal to pick the closest existing one and
+`國中理化` was added 2026-11-04 by owner decision, for junior-high
+physics/chemistry (國中自然・理化) posts, starting with the chase-problem post
+(2026-10-10). Junior-high content goes there by education level, even when the
+same topic also appears under `高中物理`; it is not filed under a high-school
+category with a `國中理化` tag.
+
+Do not invent another top-level category for a new post. If a topic doesn't
+fit one of the five, that's a signal to pick the closest existing one and
 use `tags` for the more specific term, not to add a new top-level category
 unilaterally.
 
@@ -41,10 +47,11 @@ unilaterally.
 | 高中數學—三角函數 | `[高中數學, 三角函數]` |
 | 高中數學—幾何 | `[高中數學, 幾何]` |
 | 高中數學—代數 | `[高中數學, 代數]` |
+| 國中理化—力與運動 | `[國中理化, 力與運動]` |
 
 New sub-areas under an existing top-level value are fine to add as content
 needs them (this table isn't a closed set at the second level — only the
-four top-level values are closed).
+five top-level values are closed).
 
 ## Same-named sub-areas under different top-levels
 
