@@ -9,8 +9,9 @@
 //  * Component rules below only handle what a variable cannot reach (type, radius, focus, nav state, touch size).
 //  * One hue family: the accent is a Blue-Teal (Light #216e84 ~193deg, Dark #9bd7dd ~185deg) from the three-site
 //    candidate palette (Front/Lab/Notes). Candidate values, not ratified tokens; measured AA on every surface used.
-//  * Gold (--c2-point) is decoration only: quote rule and the homepage intro tick. Never a text colour,
-//    never a state. Links and interaction use the blue-teal accent; the primary action uses brand ink.
+//  * Gold (--c2-point) is decoration only and used once per page type: the homepage intro tick. Never a text
+//    colour, never a state, never a repeated per-component rule (blockquotes use a neutral rule).
+//    Links and interaction use the blue-teal accent; the primary action uses brand ink.
 //  * No theme source is modified. !important appears only where a theme or MathJax rule already uses it (MathJax inline
 //    width, Chirpy link hover, button hover label, Chirpy outline-primary hover border) and in the reduced-motion blanket rule.
 
@@ -40,7 +41,7 @@
   --text-muted-color: var(--c2-muted);
   --heading-color: var(--c2-brand-ink);
   --label-color: var(--c2-muted);
-  --blockquote-border-color: var(--c2-point);
+  --blockquote-border-color: var(--c2-border-control);
   --blockquote-text-color: var(--c2-muted);
   --link-color: var(--c2-accent);
   --link-underline-color: #216e8466;
@@ -99,7 +100,7 @@
   --text-muted-color: var(--c2-muted);
   --heading-color: var(--c2-brand-ink);
   --label-color: var(--c2-muted);
-  --blockquote-border-color: var(--c2-point);
+  --blockquote-border-color: var(--c2-border-control);
   --blockquote-text-color: var(--c2-muted);
   --link-color: var(--c2-accent);
   --link-underline-color: #9bd7dd66;
@@ -290,14 +291,12 @@ main h1 {
   border-inline-end: 1px solid var(--sidebar-border-color);
 }
 
+// Current section: accent wash + accent label + heavier weight (non-colour cue). No side rule and no gold dot:
+// Notes stays quiet. Hover keeps Chirpy's neutral --sidebar-hover-bg; the global focus ring above is untouched.
 #sidebar ul li.nav-item.active a.nav-link {
   background: var(--c2-accent-soft);
   color: var(--c2-accent);
-}
-
-// Current section: wash + accent label + a thin inset rule (a non-colour cue). No gold dot: Notes stays quiet.
-#sidebar ul li.nav-item.active a.nav-link {
-  box-shadow: inset 3px 0 0 var(--c2-accent);
+  font-weight: 700;
 }
 
 // ---- Surfaces --------------------------------------------------------------
