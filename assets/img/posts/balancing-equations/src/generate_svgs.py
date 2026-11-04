@@ -195,7 +195,7 @@ def solution_line(mode: str) -> str:
         b.append(f'<text x="{x}" y="{ly - 52}" text-anchor="middle" font-size="15" fill="{c["ink"]}" font-weight="{700 if kind == "exam" else 400}">{tup}</text>\n')
         anchor = "middle"
         b.append(f'<text x="{x}" y="{ly - 30}" text-anchor="{anchor}" font-size="13" fill="{c["muted"]}">{html.escape(note)}</text>\n')
-    b.append(f'<text x="{x_of(6)}" y="{ly - 76}" text-anchor="middle" font-size="13" font-weight="700" fill="{c["accent"]}">段考答案 (A)</text>\n')
+    b.append(f'<text x="{x_of(6)}" y="{ly - 76}" text-anchor="middle" font-size="13" font-weight="700" fill="{c["accent"]}">選項中唯一可能：(A)</text>\n')
     b.append(f'<text x="32" y="{H - 24}" font-size="13" fill="{c["muted"]}">係數順序 a : b : c : d : e ＝ {chem("NO2")} : {chem("NH3")} : {chem("O2")} : {chem("N2")} : {chem("H2O")}</text>\n')
     # trade-off arrows
     b.append(arrow_marker(c, "ah2"))
@@ -208,7 +208,7 @@ def solution_line(mode: str) -> str:
     return shell(
         W, H, c,
         "NO2 + NH3 + O2 → N2 + H2O 的解集合",
-        "固定 NH3 為 8、H2O 為 12 時，N2 的係數 d 可以是 4 到 7 之間任何值。兩端是只用 O2（R1）與只用 NO2（R2）的反應；d = 6 化簡後為 2:4:1:3:6，係數和 16，是段考答案；d = 5 得 2:8:4:5:12，係數和 31。",
+        "固定 NH3 為 8、H2O 為 12 時，N2 的係數 d 可以是 4 到 7 之間任何值。兩端是只用 O2（R1）與只用 NO2（R2）的反應；d = 6 化簡後為 2:4:1:3:6，係數和 16，是五個選項中唯一可能的答案；d = 5 得 2:8:4:5:12，係數和 31。",
         "".join(b),
     )
 
