@@ -73,7 +73,7 @@ description: "一句話摘要，約 50–120 字，給 SEO meta description 用"
 
 ### Categories 慣例
 
-Taxonomy 的完整規則（五個 top-level 分類、現有 sub-area 對照表、同名次分類不可合併、英文翻譯頁規則）唯一真本在
+Taxonomy 的完整規則（六個 top-level 分類、現有 sub-area 對照表、同名次分類不可合併、英文翻譯頁規則）唯一真本在
 [`docs/content/taxonomy.md`](docs/content/taxonomy.md)。新增文章前先讀那份文件，不要憑記憶或猜測選分類。
 
 ---

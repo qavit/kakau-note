@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 680" width="760" height="680" role="img" aria-labelledby="t d" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',system-ui,sans-serif">
+<title id="t">氮的氧化數階梯</title>
+<desc id="d">氮的氧化數從 +5 到 −3 的代表物質；四個箭頭從硝酸的 +5 往下，分別到 NO2（1 個電子）、NO（3 個）、N2O（4 個）、NH4+（8 個）。</desc>
+<rect width="760" height="680" rx="12" fill="#1a1c21"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9bd7dd"/></marker></defs>
+<text x="32" y="40" font-size="20" font-weight="700" fill="#d4d7dd">氮的氧化數階梯</text>
+<text x="32" y="70" font-size="14" fill="#a5aab4">箭頭長度＝每個 N 得到的電子數</text>
+<line x1="92" y1="128" x2="92" y2="576" stroke="#4a4e57" stroke-width="2"/>
+<rect x="100" y="109" width="230" height="38" rx="6" fill="#173139"/>
+<line x1="84" y1="128" x2="100" y2="128" stroke="#4a4e57" stroke-width="2"/>
+<text x="70" y="134" text-anchor="end" font-size="17" font-weight="700" fill="#d4d7dd">+5</text>
+<text x="116" y="134" font-size="18" font-weight="700" fill="#d4d7dd">HNO<tspan dy="0.28em" font-size="72%">3</tspan><tspan dy="-0.28em"></tspan><tspan>、</tspan>NO<tspan dy="0.28em" font-size="72%">3</tspan><tspan dy="-0.28em"></tspan><tspan dy="-0.45em" font-size="72%">−</tspan><tspan dy="0.45em"></tspan></text>
+<rect x="100" y="165" width="230" height="38" rx="6" fill="#173139"/>
+<line x1="84" y1="184" x2="100" y2="184" stroke="#4a4e57" stroke-width="2"/>
+<text x="70" y="190" text-anchor="end" font-size="17" font-weight="700" fill="#d4d7dd">+4</text>
+<text x="116" y="190" font-size="18" font-weight="700" fill="#d4d7dd">NO<tspan dy="0.28em" font-size="72%">2</tspan><tspan dy="-0.28em"></tspan></text>
+<line x1="84" y1="240" x2="100" y2="240" stroke="#4a4e57" stroke-width="2"/>
+<text x="70" y="246" text-anchor="end" font-size="17" font-weight="700" fill="#d4d7dd">+3</text>
+<text x="116" y="246" font-size="18" font-weight="400" fill="#a5aab4">HNO<tspan dy="0.28em" font-size="72%">2</tspan><tspan dy="-0.28em"></tspan><tspan>、</tspan>NO<tspan dy="0.28em" font-size="72%">2</tspan><tspan dy="-0.28em"></tspan><tspan dy="-0.45em" font-size="72%">−</tspan><tspan dy="0.45em"></tspan></text>
+<rect x="100" y="277" width="230" height="38" rx="6" fill="#173139"/>
+<line x1="84" y1="296" x2="100" y2="296" stroke="#4a4e57" stroke-width="2"/>
+<text x="70" y="302" text-anchor="end" font-size="17" font-weight="700" fill="#d4d7dd">+2</text>
+<text x="116" y="302" font-size="18" font-weight="700" fill="#d4d7dd">NO</text>
+<rect x="100" y="333" width="230" height="38" rx="6" fill="#173139"/>
+<line x1="84" y1="352" x2="100" y2="352" stroke="#4a4e57" stroke-width="2"/>
+<text x="70" y="358" text-anchor="end" font-size="17" font-weight="700" fill="#d4d7dd">+1</text>
+<text x="116" y="358" font-size="18" font-weight="700" fill="#d4d7dd">N<tspan dy="0.28em" font-size="72%">2</tspan><tspan dy="-0.28em"></tspan>O</text>
+<line x1="84" y1="408" x2="100" y2="408" stroke="#4a4e57" stroke-width="2"/>
+<text x="70" y="414" text-anchor="end" font-size="17" font-weight="700" fill="#d4d7dd">0</text>
+<text x="116" y="414" font-size="18" font-weight="400" fill="#a5aab4">N<tspan dy="0.28em" font-size="72%">2</tspan><tspan dy="-0.28em"></tspan></text>
+<line x1="84" y1="464" x2="100" y2="464" stroke="#4a4e57" stroke-width="2"/>
+<text x="70" y="470" text-anchor="end" font-size="17" font-weight="700" fill="#d4d7dd">−1</text>
+<text x="116" y="470" font-size="18" font-weight="400" fill="#a5aab4">NH<tspan dy="0.28em" font-size="72%">2</tspan><tspan dy="-0.28em"></tspan>OH</text>
+<line x1="84" y1="520" x2="100" y2="520" stroke="#4a4e57" stroke-width="2"/>
+<text x="70" y="526" text-anchor="end" font-size="17" font-weight="700" fill="#d4d7dd">−2</text>
+<text x="116" y="526" font-size="18" font-weight="400" fill="#a5aab4">N<tspan dy="0.28em" font-size="72%">2</tspan><tspan dy="-0.28em"></tspan>H<tspan dy="0.28em" font-size="72%">4</tspan><tspan dy="-0.28em"></tspan></text>
+<rect x="100" y="557" width="230" height="38" rx="6" fill="#173139"/>
+<line x1="84" y1="576" x2="100" y2="576" stroke="#4a4e57" stroke-width="2"/>
+<text x="70" y="582" text-anchor="end" font-size="17" font-weight="700" fill="#d4d7dd">−3</text>
+<text x="116" y="582" font-size="18" font-weight="700" fill="#d4d7dd">NH<tspan dy="0.28em" font-size="72%">4</tspan><tspan dy="-0.28em"></tspan><tspan dy="-0.45em" font-size="72%">+</tspan><tspan dy="0.45em"></tspan><tspan>、</tspan>NH<tspan dy="0.28em" font-size="72%">3</tspan><tspan dy="-0.28em"></tspan></text>
+<circle cx="370" cy="128" r="5" fill="#9bd7dd"/>
+<line x1="370" y1="128" x2="370" y2="180" stroke="#9bd7dd" stroke-width="3" marker-end="url(#ah)"/>
+<text x="370" y="212" text-anchor="middle" font-size="17" font-weight="700" fill="#d4d7dd">1 e<tspan dy="-0.45em" font-size="72%">−</tspan></text>
+<text x="370" y="234" text-anchor="middle" font-size="13" fill="#a5aab4">Cu＋濃硝酸</text>
+<text x="370" y="252" text-anchor="middle" font-size="13" fill="#a5aab4">→ NO<tspan dy="0.28em" font-size="72%">2</tspan><tspan dy="-0.28em"></tspan></text>
+<circle cx="466" cy="128" r="5" fill="#9bd7dd"/>
+<line x1="466" y1="128" x2="466" y2="292" stroke="#9bd7dd" stroke-width="3" marker-end="url(#ah)"/>
+<text x="466" y="324" text-anchor="middle" font-size="17" font-weight="700" fill="#d4d7dd">3 e<tspan dy="-0.45em" font-size="72%">−</tspan></text>
+<text x="466" y="346" text-anchor="middle" font-size="13" fill="#a5aab4">Cu＋稀硝酸</text>
+<text x="466" y="364" text-anchor="middle" font-size="13" fill="#a5aab4">→ NO</text>
+<circle cx="562" cy="128" r="5" fill="#9bd7dd"/>
+<line x1="562" y1="128" x2="562" y2="348" stroke="#9bd7dd" stroke-width="3" marker-end="url(#ah)"/>
+<text x="562" y="380" text-anchor="middle" font-size="17" font-weight="700" fill="#d4d7dd">4 e<tspan dy="-0.45em" font-size="72%">−</tspan></text>
+<text x="562" y="402" text-anchor="middle" font-size="13" fill="#a5aab4">活性大的金屬</text>
+<text x="562" y="420" text-anchor="middle" font-size="13" fill="#a5aab4">→ N<tspan dy="0.28em" font-size="72%">2</tspan><tspan dy="-0.28em"></tspan>O</text>
+<circle cx="658" cy="128" r="5" fill="#9bd7dd"/>
+<line x1="658" y1="128" x2="658" y2="572" stroke="#9bd7dd" stroke-width="3" marker-end="url(#ah)"/>
+<text x="658" y="604" text-anchor="middle" font-size="17" font-weight="700" fill="#d4d7dd">8 e<tspan dy="-0.45em" font-size="72%">−</tspan></text>
+<text x="658" y="626" text-anchor="middle" font-size="13" fill="#a5aab4">Zn＋極稀硝酸</text>
+<text x="658" y="644" text-anchor="middle" font-size="13" fill="#a5aab4">→ NH<tspan dy="0.28em" font-size="72%">4</tspan><tspan dy="-0.28em"></tspan><tspan dy="-0.45em" font-size="72%">+</tspan><tspan dy="0.45em"></tspan></text>
+<text x="364" y="102" font-size="13" fill="#a5aab4">起點：HNO<tspan dy="0.28em" font-size="72%">3</tspan><tspan dy="-0.28em"></tspan> 的 N（+5）</text>
+</svg>
