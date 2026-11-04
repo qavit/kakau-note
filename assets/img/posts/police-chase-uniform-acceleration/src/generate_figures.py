@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the SVG figures for the police-chase (追及問題) post.
+"""Generate the SVG figures for the police-chase (追趕問題) post.
 
 Styled with the Notes C2 tokens (see _sass/kakau-c2.scss): neutral surface card with a
 hairline border and 14px radius, blue-teal accent for the protagonist (警車), neutral grey
