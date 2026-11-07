@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-labelledby="title desc">
+  <title id="title">雙斜面連結體示意圖</title>
+  <desc id="desc">頂端有定滑輪的背靠背斜面：左側傾角 53 度的斜面上有 5 公斤的 m1，右側傾角 37 度的斜面上有 9 公斤的 m2，輕繩平行斜面連接兩者。m2 沿斜面下滑 q，m1 沿斜面上滑 q。</desc>
+  <style>
+    text { font-family: "Source Sans Pro", "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif; fill: #1f232b; font-size: 17px; }
+    .strong { font-weight: 700; }
+    .small { font-size: 14px; }
+    .muted { fill: #555b66; }
+  </style>
+  <rect x="0.5" y="0.5" width="999" height="459" rx="14" fill="#ffffff" stroke="#d8d9dc"/>
+  <polygon points="297.5,360.0 500,90 860.0,360.0" fill="#f1f2f4" stroke="#6b7280" stroke-width="2.4" stroke-linejoin="round"/>
+  <text x="500.0" y="390.0" class="small" text-anchor="middle" style="fill:#555b66">兩個斜面皆光滑</text>
+  <path d="M 343.5 360.0 A 46 46 0 0 0 325.1 323.2" fill="none" stroke="#555b66" stroke-width="1.6"/>
+  <text x="353.5" y="352.0" class="small" text-anchor="start" style="fill:#555b66">α = 53°</text>
+  <path d="M 814.0 360.0 A 46 46 0 0 1 823.2 332.4" fill="none" stroke="#555b66" stroke-width="1.6"/>
+  <text x="804.0" y="352.0" class="small" text-anchor="end" style="fill:#555b66">β = 37°</text>
+  <line x1="500.0" y1="90.0" x2="494.0" y2="48.0" stroke="#6b7280" stroke-width="3" stroke-linecap="round"/>
+  <line x1="393.5" y1="182.0" x2="494.0" y2="48.0" stroke="#0b1730" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="649.6" y1="164.7" x2="494.0" y2="48.0" stroke="#0b1730" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="494.0" cy="48.0" r="15" fill="#ffffff" stroke="#6b7280" stroke-width="2.4"/><circle cx="494.0" cy="48.0" r="3.5" fill="#6b7280"/>
+  <g transform="translate(370.7 212.4) rotate(-53)"><rect x="-38.0" y="-28.0" width="76" height="56" rx="4" fill="#eef6f7" stroke="#216e84" stroke-width="2.4"/></g><text x="370.7" y="212.4" class="strong" text-anchor="middle" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan></text>
+  <g transform="translate(680.0 187.5) rotate(37)"><rect x="-42.0" y="-28.0" width="84" height="56" rx="4" fill="#f1f2f4" stroke="#6b7280" stroke-width="2.4"/></g><text x="680.0" y="187.5" class="strong" text-anchor="middle" style="fill:#6b7280"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan></text>
+  <text x="413.5" y="246.0" class="small" text-anchor="start" style="fill:#216e84">5 kg</text>
+  <text x="646.4" y="230.3" class="small" text-anchor="end" style="fill:#555b66">9 kg</text>
+  <line x1="302.7" y1="206.4" x2="339.3" y2="157.6" stroke="#216e84" stroke-width="2.6" stroke-linecap="round"/><polygon points="345.9,148.8 343.0,160.4 335.6,154.8" fill="#216e84"/>
+  <text x="302.7" y="164.4" class="small" text-anchor="end" style="fill:#216e84">+<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>（沿斜面向上）</text>
+  <line x1="686.0" y1="119.5" x2="734.8" y2="156.1" stroke="#216e84" stroke-width="2.6" stroke-linecap="round"/><polygon points="743.6,162.7 732.0,159.8 737.6,152.4" fill="#216e84"/>
+  <text x="732.0" y="123.5" class="small" text-anchor="start" style="fill:#216e84">+<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>（沿斜面向下）</text>
+  <text x="40.0" y="44.0" class="strong" text-anchor="start" style="fill:#0b1730">兩個物體各在自己的斜面軌道上，共用同一個座標 <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan></text>
+  <text x="40.0" y="70.0" class="small" text-anchor="start" style="fill:#555b66"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan> 沿斜面下滑 <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>，<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan> 就沿斜面上滑 <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>：<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan> = <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan> = <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan></text>
+</svg>

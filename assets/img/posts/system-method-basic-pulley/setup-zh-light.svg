@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="420" viewBox="0 0 860 420" role="img" aria-labelledby="title desc">
+  <title id="title">滑車問題示意圖</title>
+  <desc id="desc">光滑水平桌面上的物體 A（5 公斤）以輕繩跨過桌邊定滑輪，連接垂掛的物體 B（10 公斤）。A 朝滑輪前進的位移與 B 下降的位移相同，都記為 q。</desc>
+  <style>
+    text { font-family: "Source Sans Pro", "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif; fill: #1f232b; font-size: 17px; }
+    .strong { font-weight: 700; }
+    .small { font-size: 14px; }
+    .muted { fill: #555b66; }
+  </style>
+  <rect x="0.5" y="0.5" width="859" height="419" rx="14" fill="#ffffff" stroke="#d8d9dc"/>
+  <rect x="70" y="250" width="500" height="22" fill="#f1f2f4" stroke="#6b7280" stroke-width="2"/>
+  <text x="150.0" y="267.0" class="small" text-anchor="middle" style="fill:#555b66">光滑桌面</text>
+  <line x1="564.0" y1="261.0" x2="570.0" y2="244.0" stroke="#6b7280" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="570.0" cy="244.0" r="22" fill="#ffffff" stroke="#6b7280" stroke-width="2.4"/><circle cx="570.0" cy="244.0" r="3.5" fill="#6b7280"/>
+  <g transform="translate(300.0 218.0) rotate(0)"><rect x="-50.0" y="-32.0" width="100" height="64" rx="4" fill="#eef6f7" stroke="#216e84" stroke-width="2.4"/></g><text x="300.0" y="224.0" class="strong" text-anchor="middle" style="fill:#216e84">A  5 kg</text>
+  <line x1="350.0" y1="222.0" x2="570.0" y2="222.0" stroke="#0b1730" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M 570 222 A 22 22 0 0 1 592 244" fill="none" stroke="#0b1730" stroke-width="2.4"/>
+  <line x1="592.0" y1="244.0" x2="592.0" y2="320.0" stroke="#0b1730" stroke-width="2.4" stroke-linecap="round"/>
+  <g transform="translate(592.0 360.0) rotate(0)"><rect x="-42.0" y="-40.0" width="84" height="80" rx="4" fill="#f1f2f4" stroke="#6b7280" stroke-width="2.4"/></g><text x="592.0" y="366.0" class="strong" text-anchor="middle" style="fill:#6b7280">B  10 kg</text>
+  <text x="662.0" y="305.0" class="small" text-anchor="start" style="fill:#555b66">輕繩</text>
+  <line x1="260.0" y1="164.0" x2="349.0" y2="164.0" stroke="#216e84" stroke-width="2.6" stroke-linecap="round"/><polygon points="360.0,164.0 349.0,168.6 349.0,159.4" fill="#216e84"/>
+  <text x="310.0" y="152.0" class="small" text-anchor="middle" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>x</tspan><tspan baseline-shift="sub" font-size="72%">A</tspan> = <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>（朝滑輪為正）</text>
+  <line x1="670.0" y1="330.0" x2="670.0" y2="391.0" stroke="#216e84" stroke-width="2.6" stroke-linecap="round"/><polygon points="670.0,402.0 665.4,391.0 674.6,391.0" fill="#216e84"/>
+  <text x="684.0" y="372.0" class="small" text-anchor="start" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>y</tspan><tspan baseline-shift="sub" font-size="72%">B</tspan> = <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan></text>
+  <text x="684.0" y="392.0" class="small" text-anchor="start" style="fill:#216e84">（向下為正）</text>
+  <text x="60.0" y="60.0" class="strong" text-anchor="start" style="fill:#0b1730">繩長不變 ⇒ A 前進多少，B 就下降多少</text>
+  <text x="60.0" y="88.0" class="small" text-anchor="start" style="fill:#555b66">兩者共用同一個座標 <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>，加速度大小相同：<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan><tspan baseline-shift="sub" font-size="72%">A</tspan> = <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan><tspan baseline-shift="sub" font-size="72%">B</tspan> = <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan></text>
+</svg>
