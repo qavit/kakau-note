@@ -20,8 +20,8 @@ $$\require{physics}$$
 
 ## 題目
 
-![動滑輪系統示意圖：3 kg 掛在動滑輪下，2 kg 掛在繩的自由端](/assets/img/posts/system-method-movable-pulley/setup-zh-light.svg){: .light w="760" }
-![動滑輪系統示意圖：3 kg 掛在動滑輪下，2 kg 掛在繩的自由端](/assets/img/posts/system-method-movable-pulley/setup-zh-dark.svg){: .dark w="760" }
+![動滑輪系統示意圖：3 kg 掛在動滑輪下，2 kg 掛在繩的自由端](/assets/img/posts/system-method-movable-pulley/setup-zh-light.svg){: .light w="480" }
+![動滑輪系統示意圖：3 kg 掛在動滑輪下，2 kg 掛在繩的自由端](/assets/img/posts/system-method-movable-pulley/setup-zh-dark.svg){: .dark w="480" }
 
 **圖 1：** 動滑輪系統。動滑輪下有兩股繩支撐，所以動滑輪上升 $q$ 時，2 kg 物體要下降 $2q$（箭頭長度為 $1:2$）。
 {: .fig-caption }
@@ -80,8 +80,8 @@ $$2\,d_3 + d_2 = \text{常數}$$
 
 輕繩加上理想滑輪，整條繩上張力處處為 $T$。
 
-![3 kg 與 2 kg 的自由體圖，3 kg 受兩股張力共 2T](/assets/img/posts/system-method-movable-pulley/fbd-zh-light.svg){: .light w="760" }
-![3 kg 與 2 kg 的自由體圖，3 kg 受兩股張力共 2T](/assets/img/posts/system-method-movable-pulley/fbd-zh-dark.svg){: .dark w="760" }
+![3 kg 與 2 kg 的自由體圖，3 kg 受兩股張力共 2T](/assets/img/posts/system-method-movable-pulley/fbd-zh-light.svg){: .light w="480" }
+![3 kg 與 2 kg 的自由體圖，3 kg 受兩股張力共 2T](/assets/img/posts/system-method-movable-pulley/fbd-zh-dark.svg){: .dark w="480" }
 
 **圖 2：** 兩物體的自由體圖。$3\ \text{kg}$ 受兩股張力，所以向上的力是 $2T$；$2\ \text{kg}$ 的加速度是 $2a$，不是 $a$。
 {: .fig-caption }

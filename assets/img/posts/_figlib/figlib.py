@@ -67,9 +67,9 @@ def shell(c, w, h, title, desc, body):
   <title id="title">{esc(title)}</title>
   <desc id="desc">{esc(desc)}</desc>
   <style>
-    text {{ font-family: {SANS}; fill: {c['text']}; font-size: 17px; }}
+    text {{ font-family: {SANS}; fill: {c['text']}; font-size: 19px; }}
     .strong {{ font-weight: 700; }}
-    .small {{ font-size: 14px; }}
+    .small {{ font-size: 16px; }}
     .muted {{ fill: {c['muted']}; }}
   </style>
   <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{c['raised']}" stroke="{c['border']}"/>

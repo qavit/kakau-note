@@ -20,8 +20,8 @@ $$\require{physics}$$
 
 ## 題目
 
-![雙斜面連結體示意圖：53° 斜面上的 m1 與 37° 斜面上的 m2 以繩跨過頂端滑輪相連](/assets/img/posts/system-method-double-incline/setup-zh-light.svg){: .light w="860" }
-![雙斜面連結體示意圖：53° 斜面上的 m1 與 37° 斜面上的 m2 以繩跨過頂端滑輪相連](/assets/img/posts/system-method-double-incline/setup-zh-dark.svg){: .dark w="860" }
+![雙斜面連結體示意圖：53° 斜面上的 m1 與 37° 斜面上的 m2 以繩跨過頂端滑輪相連](/assets/img/posts/system-method-double-incline/setup-zh-light.svg){: .light w="480" }
+![雙斜面連結體示意圖：53° 斜面上的 m1 與 37° 斜面上的 m2 以繩跨過頂端滑輪相連](/assets/img/posts/system-method-double-incline/setup-zh-dark.svg){: .dark w="480" }
 
 **圖 1：** 雙斜面連結體。$m_2$ 沿斜面下滑 $q$，$m_1$ 就沿斜面上滑 $q$；兩個正方向是不同的空間方向，但共用同一個座標 $q$。
 {: .fig-caption }
@@ -58,8 +58,8 @@ $$m_2 g\sin\beta = 54\ \text{N}, \qquad m_1 g\sin\alpha = 40\ \text{N}, \qquad a
 
 ## 為什麼垂直斜面的方程式不提供加速度？
 
-![m1 與 m2 的自由體圖，重力分解為沿斜面與垂直斜面的分量](/assets/img/posts/system-method-double-incline/fbd-zh-light.svg){: .light w="860" }
-![m1 與 m2 的自由體圖，重力分解為沿斜面與垂直斜面的分量](/assets/img/posts/system-method-double-incline/fbd-zh-dark.svg){: .dark w="860" }
+![m1 與 m2 的自由體圖，重力分解為沿斜面與垂直斜面的分量](/assets/img/posts/system-method-double-incline/fbd-zh-light.svg){: .light w="480" }
+![m1 與 m2 的自由體圖，重力分解為沿斜面與垂直斜面的分量](/assets/img/posts/system-method-double-incline/fbd-zh-dark.svg){: .dark w="480" }
 
 **圖 2：** 兩物體的自由體圖。虛線是重力沿斜面與垂直斜面的分解；沿斜面的兩條方程式含有 $a$，垂直斜面的兩條只決定 $N$。
 {: .fig-caption }

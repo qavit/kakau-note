@@ -1,31 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="350" viewBox="0 0 460 350" role="img" aria-labelledby="title desc">
   <title id="title">雙斜面連結體示意圖</title>
   <desc id="desc">頂端有定滑輪的背靠背斜面：左側傾角 53 度的斜面上有 5 公斤的 m1，右側傾角 37 度的斜面上有 9 公斤的 m2，輕繩平行斜面連接兩者。m2 沿斜面下滑 q，m1 沿斜面上滑 q。</desc>
   <style>
-    text { font-family: "Source Sans Pro", "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif; fill: #1f232b; font-size: 17px; }
+    text { font-family: "Source Sans Pro", "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif; fill: #1f232b; font-size: 19px; }
     .strong { font-weight: 700; }
-    .small { font-size: 14px; }
+    .small { font-size: 16px; }
     .muted { fill: #555b66; }
   </style>
-  <rect x="0.5" y="0.5" width="999" height="459" rx="14" fill="#ffffff" stroke="#d8d9dc"/>
-  <polygon points="297.5,360.0 500,90 860.0,360.0" fill="#f1f2f4" stroke="#6b7280" stroke-width="2.4" stroke-linejoin="round"/>
-  <text x="500.0" y="390.0" class="small" text-anchor="middle" style="fill:#555b66">兩個斜面皆光滑</text>
-  <path d="M 343.5 360.0 A 46 46 0 0 0 325.1 323.2" fill="none" stroke="#555b66" stroke-width="1.6"/>
-  <text x="353.5" y="352.0" class="small" text-anchor="start" style="fill:#555b66">α = 53°</text>
-  <path d="M 814.0 360.0 A 46 46 0 0 1 823.2 332.4" fill="none" stroke="#555b66" stroke-width="1.6"/>
-  <text x="804.0" y="352.0" class="small" text-anchor="end" style="fill:#555b66">β = 37°</text>
-  <line x1="500.0" y1="90.0" x2="494.0" y2="48.0" stroke="#6b7280" stroke-width="3" stroke-linecap="round"/>
-  <line x1="393.5" y1="182.0" x2="494.0" y2="48.0" stroke="#0b1730" stroke-width="2.4" stroke-linecap="round"/>
-  <line x1="649.6" y1="164.7" x2="494.0" y2="48.0" stroke="#0b1730" stroke-width="2.4" stroke-linecap="round"/>
-  <circle cx="494.0" cy="48.0" r="15" fill="#ffffff" stroke="#6b7280" stroke-width="2.4"/><circle cx="494.0" cy="48.0" r="3.5" fill="#6b7280"/>
-  <g transform="translate(370.7 212.4) rotate(-53)"><rect x="-38.0" y="-28.0" width="76" height="56" rx="4" fill="#eef6f7" stroke="#216e84" stroke-width="2.4"/></g><text x="370.7" y="212.4" class="strong" text-anchor="middle" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan></text>
-  <g transform="translate(680.0 187.5) rotate(37)"><rect x="-42.0" y="-28.0" width="84" height="56" rx="4" fill="#f1f2f4" stroke="#6b7280" stroke-width="2.4"/></g><text x="680.0" y="187.5" class="strong" text-anchor="middle" style="fill:#6b7280"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan></text>
-  <text x="413.5" y="246.0" class="small" text-anchor="start" style="fill:#216e84">5 kg</text>
-  <text x="646.4" y="230.3" class="small" text-anchor="end" style="fill:#555b66">9 kg</text>
-  <line x1="302.7" y1="206.4" x2="339.3" y2="157.6" stroke="#216e84" stroke-width="2.6" stroke-linecap="round"/><polygon points="345.9,148.8 343.0,160.4 335.6,154.8" fill="#216e84"/>
-  <text x="302.7" y="164.4" class="small" text-anchor="end" style="fill:#216e84">+<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>（沿斜面向上）</text>
-  <line x1="686.0" y1="119.5" x2="734.8" y2="156.1" stroke="#216e84" stroke-width="2.6" stroke-linecap="round"/><polygon points="743.6,162.7 732.0,159.8 737.6,152.4" fill="#216e84"/>
-  <text x="732.0" y="123.5" class="small" text-anchor="start" style="fill:#216e84">+<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>（沿斜面向下）</text>
-  <text x="40.0" y="44.0" class="strong" text-anchor="start" style="fill:#0b1730">兩個物體各在自己的斜面軌道上，共用同一個座標 <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan></text>
-  <text x="40.0" y="70.0" class="small" text-anchor="start" style="fill:#555b66"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan> 沿斜面下滑 <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>，<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan> 就沿斜面上滑 <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>：<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan> = <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan> = <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan></text>
+  <rect x="0.5" y="0.5" width="459" height="349" rx="14" fill="#ffffff" stroke="#d8d9dc"/>
+  <polygon points="77.5,245.0 190,95 390.0,245.0" fill="#f1f2f4" stroke="#6b7280" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M 111.5 245.0 A 34 34 0 0 0 97.9 217.8" fill="none" stroke="#555b66" stroke-width="1.6"/>
+  <text x="117.5" y="237.0" text-anchor="start" style="fill:#555b66">α</text>
+  <path d="M 356.0 245.0 A 34 34 0 0 1 362.8 224.6" fill="none" stroke="#555b66" stroke-width="1.6"/>
+  <text x="350.0" y="237.0" text-anchor="end" style="fill:#555b66">β</text>
+  <line x1="190.0" y1="95.0" x2="185.6" y2="64.2" stroke="#6b7280" stroke-width="3" stroke-linecap="round"/>
+  <line x1="133.0" y1="134.4" x2="185.6" y2="64.2" stroke="#0b1730" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="270.8" y1="128.1" x2="185.6" y2="64.2" stroke="#0b1730" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="185.6" cy="64.2" r="12" fill="#ffffff" stroke="#6b7280" stroke-width="2.4"/><circle cx="185.6" cy="64.2" r="3.5" fill="#6b7280"/>
+  <g transform="translate(116.2 156.8) rotate(-53)"><rect x="-28.0" y="-20.0" width="56" height="40" rx="4" fill="#eef6f7" stroke="#216e84" stroke-width="2.4"/></g><text x="116.2" y="162.8" class="strong" text-anchor="middle" style="fill:#216e84"></text>
+  <g transform="translate(293.2 144.9) rotate(37)"><rect x="-31.0" y="-20.0" width="62" height="40" rx="4" fill="#f1f2f4" stroke="#6b7280" stroke-width="2.4"/></g><text x="293.2" y="150.9" class="strong" text-anchor="middle" style="fill:#6b7280"></text>
+  <text x="89.0" y="142.4" class="strong" text-anchor="end" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan></text>
+  <text x="313.6" y="123.7" class="strong" text-anchor="start" style="fill:#555b66"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan></text>
+  <line x1="48.6" y1="143.6" x2="78.0" y2="104.4" stroke="#216e84" stroke-width="2.6" stroke-linecap="round"/><polygon points="84.6,95.6 81.6,107.2 74.3,101.6" fill="#216e84"/>
+  <text x="56.2" y="114.8" class="strong" text-anchor="end" style="fill:#216e84">+<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan></text>
+  <line x1="306.4" y1="77.3" x2="345.6" y2="106.7" stroke="#216e84" stroke-width="2.6" stroke-linecap="round"/><polygon points="354.4,113.3 342.8,110.4 348.4,103.0" fill="#216e84"/>
+  <text x="339.2" y="88.9" class="strong" text-anchor="start" style="fill:#216e84">+<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan></text>
+  <text x="230.0" y="281.0" class="small" text-anchor="middle" style="fill:#555b66"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan>：5 kg，α = 53°；<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan>：9 kg，β = 37°</text>
+  <text x="230.0" y="305.0" class="small" text-anchor="middle" style="fill:#216e84">+<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>：<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan> 沿斜面向上，<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan> 沿斜面向下</text>
 </svg>

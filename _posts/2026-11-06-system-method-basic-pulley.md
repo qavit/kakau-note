@@ -26,8 +26,8 @@ $$\require{physics}$$
 
 ## 題目與設定
 
-![滑車問題示意圖：A 在光滑桌面，B 垂掛，兩者共用座標 q](/assets/img/posts/system-method-basic-pulley/setup-zh-light.svg){: .light w="760" }
-![滑車問題示意圖：A 在光滑桌面，B 垂掛，兩者共用座標 q](/assets/img/posts/system-method-basic-pulley/setup-zh-dark.svg){: .dark w="760" }
+![滑車問題示意圖：A 在光滑桌面，B 垂掛，兩者共用座標 q](/assets/img/posts/system-method-basic-pulley/setup-zh-light.svg){: .light w="480" }
+![滑車問題示意圖：A 在光滑桌面，B 垂掛，兩者共用座標 q](/assets/img/posts/system-method-basic-pulley/setup-zh-dark.svg){: .dark w="480" }
 
 **圖 1：** 滑車問題。繩長不變，所以 A 朝滑輪前進的距離 $x_A$ 與 B 下降的距離 $y_B$ 相同，都記為 $q$。
 {: .fig-caption }
@@ -61,8 +61,8 @@ $$a_A = a_B = \ddot q \equiv a$$
 
 分別對兩個物體畫自由體圖，並事先講清楚各自的正方向。
 
-![A 與 B 的自由體圖，各自標出正方向與方程式](/assets/img/posts/system-method-basic-pulley/fbd-zh-light.svg){: .light w="820" }
-![A 與 B 的自由體圖，各自標出正方向與方程式](/assets/img/posts/system-method-basic-pulley/fbd-zh-dark.svg){: .dark w="820" }
+![A 與 B 的自由體圖，各自標出正方向與方程式](/assets/img/posts/system-method-basic-pulley/fbd-zh-light.svg){: .light w="480" }
+![A 與 B 的自由體圖，各自標出正方向與方程式](/assets/img/posts/system-method-basic-pulley/fbd-zh-dark.svg){: .dark w="480" }
 
 **圖 2：** A、B 的自由體圖。各自選自己的運動方向為正，沿該方向寫牛頓第二定律；A 的鉛直方向 $N$ 與 $m_A g$ 平衡，不含加速度。
 {: .fig-caption }
