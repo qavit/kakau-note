@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="945" viewBox="0 0 460 945" role="img" aria-labelledby="title desc">
+  <title id="title">三物體 A、B、C 的自由體圖</title>
+  <desc id="desc">A 受動滑輪兩側共 2T1 向上與重力 3g 向下，向上為正；B 受左側繩 T1 與右側繩 T2 向上與重力 2g 向下，向下為正，加速度為 2a；C 在光滑桌面上受繩 T2 朝滑輪，向左為正，加速度為 2a，重力與支持力抵消。</desc>
+  <style>
+    text { font-family: "Source Sans Pro", "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif; fill: #1f232b; font-size: 19px; }
+    .strong { font-weight: 700; }
+    .small { font-size: 16px; }
+    .muted { fill: #555b66; }
+  </style>
+  <rect x="0.5" y="0.5" width="459" height="944" rx="14" fill="#ffffff" stroke="#d8d9dc"/>
+  <text x="230.0" y="30.0" class="strong" text-anchor="middle" style="fill:#0b1730">對 A 3 kg（向上為正）</text>
+  <g transform="translate(230.0 170.0) rotate(0)"><rect x="-48.0" y="-35.0" width="96" height="70" rx="4" fill="#eef6f7" stroke="#216e84" stroke-width="2.4"/></g><text x="230.0" y="176.0" class="strong" text-anchor="middle" style="fill:#216e84">A</text>
+  <line x1="210.0" y1="135.0" x2="210.0" y2="86.0" stroke="#216e84" stroke-width="3.2" stroke-linecap="round"/><polygon points="210.0,75.0 214.6,86.0 205.4,86.0" fill="#216e84"/>
+  <line x1="250.0" y1="135.0" x2="250.0" y2="86.0" stroke="#216e84" stroke-width="3.2" stroke-linecap="round"/><polygon points="250.0,75.0 254.6,86.0 245.4,86.0" fill="#216e84"/>
+  <text x="200.0" y="85.0" class="strong" text-anchor="end" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>T</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan></text>
+  <text x="260.0" y="85.0" class="strong" text-anchor="start" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>T</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan></text>
+  <text x="230.0" y="63.0" class="small" text-anchor="middle" style="fill:#216e84">共 2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>T</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan></text>
+  <line x1="230.0" y1="205.0" x2="230.0" y2="250.0" stroke="#0b1730" stroke-width="2.6" stroke-linecap="round"/><polygon points="230.0,261.0 225.4,250.0 234.6,250.0" fill="#0b1730"/>
+  <text x="242.0" y="261.0" text-anchor="start">3<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>g</tspan></text>
+  <line x1="400.0" y1="200.0" x2="400.0" y2="151.0" stroke="#555b66" stroke-width="2" stroke-linecap="round"/><polygon points="400.0,140.0 404.6,151.0 395.4,151.0" fill="#555b66"/>
+  <text x="400.0" y="128.0" class="small" text-anchor="middle" style="fill:#555b66">正方向</text>
+  <text x="230.0" y="300.0" class="strong" text-anchor="middle" style="fill:#216e84">2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>T</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan> − 3<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>g</tspan> = 3<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan></text>
+  <text x="230.0" y="355.0" class="strong" text-anchor="middle" style="fill:#0b1730">對 B 2 kg（向下為正）</text>
+  <g transform="translate(230.0 465.0) rotate(0)"><rect x="-45.0" y="-35.0" width="90" height="70" rx="4" fill="#f1f2f4" stroke="#6b7280" stroke-width="2.4"/></g><text x="230.0" y="471.0" class="strong" text-anchor="middle" style="fill:#6b7280">B</text>
+  <line x1="208.0" y1="430.0" x2="208.0" y2="381.0" stroke="#216e84" stroke-width="3.2" stroke-linecap="round"/><polygon points="208.0,370.0 212.6,381.0 203.4,381.0" fill="#216e84"/>
+  <line x1="252.0" y1="430.0" x2="252.0" y2="405.0" stroke="#216e84" stroke-width="3.2" stroke-linecap="round"/><polygon points="252.0,394.0 256.6,405.0 247.4,405.0" fill="#216e84"/>
+  <text x="198.0" y="380.0" class="strong" text-anchor="end" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>T</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan></text>
+  <text x="262.0" y="404.0" class="strong" text-anchor="start" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>T</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan></text>
+  <line x1="230.0" y1="500.0" x2="230.0" y2="545.0" stroke="#0b1730" stroke-width="2.6" stroke-linecap="round"/><polygon points="230.0,556.0 225.4,545.0 234.6,545.0" fill="#0b1730"/>
+  <text x="242.0" y="556.0" text-anchor="start">2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>g</tspan></text>
+  <line x1="400.0" y1="435.0" x2="400.0" y2="484.0" stroke="#555b66" stroke-width="2" stroke-linecap="round"/><polygon points="400.0,495.0 395.4,484.0 404.6,484.0" fill="#555b66"/>
+  <text x="400.0" y="423.0" class="small" text-anchor="middle" style="fill:#555b66">正方向</text>
+  <text x="230.0" y="593.0" class="strong" text-anchor="middle" style="fill:#216e84">2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>g</tspan> − <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>T</tspan><tspan baseline-shift="sub" font-size="72%">1</tspan> − <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>T</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan> = 2·(2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan>) = 4<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan></text>
+  <text x="230.0" y="619.0" class="small" text-anchor="middle" style="fill:#555b66">B 的加速度是 2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan>，不是 <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan></text>
+  <text x="230.0" y="675.0" class="strong" text-anchor="middle" style="fill:#0b1730">對 C 1 kg（朝滑輪，向左為正）</text>
+  <g transform="translate(230.0 765.0) rotate(0)"><rect x="-40.0" y="-25.0" width="80" height="50" rx="4" fill="#f1f2f4" stroke="#6b7280" stroke-width="2.4"/></g><text x="230.0" y="771.0" class="strong" text-anchor="middle" style="fill:#6b7280">C</text>
+  <line x1="190.0" y1="765.0" x2="137.0" y2="765.0" stroke="#216e84" stroke-width="3.2" stroke-linecap="round"/><polygon points="126.0,765.0 137.0,760.4 137.0,769.6" fill="#216e84"/>
+  <text x="158.0" y="753.0" class="strong" text-anchor="middle" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>T</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan></text>
+  <line x1="230.0" y1="740.0" x2="230.0" y2="717.0" stroke="#555b66" stroke-width="2.4" stroke-linecap="round"/><polygon points="230.0,706.0 234.6,717.0 225.4,717.0" fill="#555b66"/>
+  <text x="240.0" y="716.0" class="small" text-anchor="start" style="fill:#555b66"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>N</tspan></text>
+  <line x1="230.0" y1="790.0" x2="230.0" y2="813.0" stroke="#555b66" stroke-width="2.4" stroke-linecap="round"/><polygon points="230.0,824.0 225.4,813.0 234.6,813.0" fill="#555b66"/>
+  <text x="240.0" y="824.0" class="small" text-anchor="start" style="fill:#555b66"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>m</tspan><tspan baseline-shift="sub" font-size="72%">C</tspan><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>g</tspan></text>
+  <line x1="420.0" y1="805.0" x2="371.0" y2="805.0" stroke="#555b66" stroke-width="2" stroke-linecap="round"/><polygon points="360.0,805.0 371.0,800.4 371.0,809.6" fill="#555b66"/>
+  <text x="390.0" y="827.0" class="small" text-anchor="middle" style="fill:#555b66">正方向</text>
+  <text x="230.0" y="870.0" class="strong" text-anchor="middle" style="fill:#216e84"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>T</tspan><tspan baseline-shift="sub" font-size="72%">2</tspan> = 1·(2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan>) = 2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>a</tspan></text>
+  <text x="230.0" y="896.0" class="small" text-anchor="middle" style="fill:#555b66"><tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>N</tspan> 與重力互相抵消，不影響水平運動</text>
+  <text x="230.0" y="922.0" class="small" text-anchor="middle" style="fill:#555b66">箭頭長度僅為示意，不代表大小</text>
+</svg>

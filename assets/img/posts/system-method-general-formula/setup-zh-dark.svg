@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="530" viewBox="0 0 460 530" role="img" aria-labelledby="title desc">
+  <title id="title">三物體連結體示意圖</title>
+  <desc id="desc">繩 1 一端固定在天花板，向下繞過掛有 3 公斤物體 A 的動滑輪，再繞過天花板上的定滑輪，垂下接 2 公斤物體 B 的左側吊鉤。繩 2 接在 B 的右側吊鉤，向上繞過桌邊的定滑輪後水平接到光滑桌面上的 1 公斤物體 C。A 上升 q 時，B 下降 2q，C 朝滑輪前進 2q。</desc>
+  <style>
+    text { font-family: "Source Sans Pro", "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif; fill: #d4d7dd; font-size: 19px; }
+    .strong { font-weight: 700; }
+    .small { font-size: 16px; }
+    .muted { fill: #a5aab4; }
+  </style>
+  <rect x="0.5" y="0.5" width="459" height="529" rx="14" fill="#1a1c21" stroke="#33353a"/>
+  <line x1="130.0" y1="40.0" x2="280.0" y2="40.0" stroke="#8a909c" stroke-width="2.4" stroke-linecap="round"/><line x1="130.0" y1="40.0" x2="118.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/><line x1="144.0" y1="40.0" x2="132.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/><line x1="158.0" y1="40.0" x2="146.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/><line x1="172.0" y1="40.0" x2="160.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/><line x1="186.0" y1="40.0" x2="174.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/><line x1="200.0" y1="40.0" x2="188.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/><line x1="214.0" y1="40.0" x2="202.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/><line x1="228.0" y1="40.0" x2="216.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/><line x1="242.0" y1="40.0" x2="230.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/><line x1="256.0" y1="40.0" x2="244.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/><line x1="270.0" y1="40.0" x2="258.0" y2="28.0" stroke="#8a909c" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="160.0" y1="40.0" x2="160.0" y2="230.0" stroke="#b7c6e6" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="160" cy="40" r="5" fill="#b7c6e6"/>
+  <path d="M 160 230 A 20 20 0 0 0 200 230" fill="none" stroke="#b7c6e6" stroke-width="2.6"/>
+  <line x1="200.0" y1="230.0" x2="200.0" y2="82.0" stroke="#b7c6e6" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M 200 82 A 20 20 0 0 1 240 82" fill="none" stroke="#b7c6e6" stroke-width="2.6"/>
+  <line x1="240.0" y1="82.0" x2="240.0" y2="300.0" stroke="#b7c6e6" stroke-width="2.6" stroke-linecap="round"/>
+  <line x1="220.0" y1="40.0" x2="220.0" y2="82.0" stroke="#8a909c" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="220.0" cy="82.0" r="20" fill="#1a1c21" stroke="#8a909c" stroke-width="2.4"/><circle cx="220.0" cy="82.0" r="3.5" fill="#8a909c"/>
+  <circle cx="180.0" cy="230.0" r="20" fill="#1a1c21" stroke="#8a909c" stroke-width="2.4"/><circle cx="180.0" cy="230.0" r="3.5" fill="#8a909c"/>
+  <line x1="180.0" y1="230.0" x2="180.0" y2="290.0" stroke="#8a909c" stroke-width="3" stroke-linecap="round"/>
+  <g transform="translate(180.0 322.0) rotate(0)"><rect x="-38.0" y="-32.0" width="76" height="64" rx="4" fill="#1a2c32" stroke="#9bd7dd" stroke-width="2.4"/></g><text x="180.0" y="328.0" class="strong" text-anchor="middle" style="fill:#9bd7dd">A 3 kg</text>
+  <g transform="translate(275.0 330.0) rotate(0)"><rect x="-42.0" y="-30.0" width="84" height="60" rx="4" fill="#25272c" stroke="#a5aab4" stroke-width="2.4"/></g><text x="275.0" y="336.0" class="strong" text-anchor="middle" style="fill:#a5aab4">B 2 kg</text>
+  <line x1="348.0" y1="150.0" x2="440.0" y2="150.0" stroke="#8a909c" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="348.0" y1="150.0" x2="348.0" y2="168.0" stroke="#8a909c" stroke-width="2.4" stroke-linecap="round"/>
+  <line x1="330.0" y1="148.0" x2="348.0" y2="150.0" stroke="#8a909c" stroke-width="3" stroke-linecap="round"/>
+  <line x1="359.0" y1="128.0" x2="330.0" y2="128.0" stroke="#b7c6e6" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M 330 128 A 20 20 0 0 0 310 148" fill="none" stroke="#b7c6e6" stroke-width="2.6"/>
+  <line x1="310.0" y1="148.0" x2="310.0" y2="300.0" stroke="#b7c6e6" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="330.0" cy="148.0" r="20" fill="#1a1c21" stroke="#8a909c" stroke-width="2.4"/><circle cx="330.0" cy="148.0" r="3.5" fill="#8a909c"/>
+  <g transform="translate(392.0 128.0) rotate(0)"><rect x="-33.0" y="-22.0" width="66" height="44" rx="4" fill="#25272c" stroke="#a5aab4" stroke-width="2.4"/></g><text x="392.0" y="134.0" class="strong" text-anchor="middle" style="fill:#a5aab4">C 1 kg</text>
+  <text x="148.0" y="130.0" class="small" text-anchor="end" style="fill:#a5aab4">繩端固定</text>
+  <text x="148.0" y="252.0" class="small" text-anchor="end" style="fill:#a5aab4">動滑輪</text>
+  <text x="252.0" y="76.0" class="small" text-anchor="start" style="fill:#a5aab4">定滑輪</text>
+  <text x="318.0" y="184.0" class="small" text-anchor="start" style="fill:#a5aab4">定滑輪</text>
+  <text x="440.0" y="206.0" class="small" text-anchor="end" style="fill:#a5aab4">光滑桌面</text>
+  <text x="251.0" y="285.0" class="small" text-anchor="start" style="fill:#a5aab4">繩 1</text>
+  <text x="322.0" y="285.0" class="small" text-anchor="start" style="fill:#a5aab4">繩 2</text>
+  <line x1="60.0" y1="360.0" x2="60.0" y2="321.0" stroke="#9bd7dd" stroke-width="2.6" stroke-linecap="round"/><polygon points="60.0,310.0 64.6,321.0 55.4,321.0" fill="#9bd7dd"/>
+  <text x="60.0" y="384.0" class="small" text-anchor="middle" style="fill:#9bd7dd">A：<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan></text>
+  <text x="60.0" y="404.0" class="small" text-anchor="middle" style="fill:#9bd7dd">向上</text>
+  <line x1="372.0" y1="330.0" x2="372.0" y2="419.0" stroke="#9bd7dd" stroke-width="2.6" stroke-linecap="round"/><polygon points="372.0,430.0 367.4,419.0 376.6,419.0" fill="#9bd7dd"/>
+  <text x="372.0" y="454.0" class="small" text-anchor="middle" style="fill:#9bd7dd">B：2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan></text>
+  <text x="372.0" y="474.0" class="small" text-anchor="middle" style="fill:#9bd7dd">向下</text>
+  <line x1="430.0" y1="96.0" x2="341.0" y2="96.0" stroke="#9bd7dd" stroke-width="2.6" stroke-linecap="round"/><polygon points="330.0,96.0 341.0,91.4 341.0,100.6" fill="#9bd7dd"/>
+  <text x="380.0" y="76.0" class="small" text-anchor="middle" style="fill:#9bd7dd">C：2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>q</tspan>（朝滑輪）</text>
+  <text x="230.0" y="508.0" class="small" text-anchor="middle" style="fill:#a5aab4">繩 1：2<tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>d</tspan><tspan baseline-shift="sub" font-size="72%">A</tspan> + <tspan font-family='"STIX Two Text", "Latin Modern Roman", "Times New Roman", serif' font-style='italic'>d</tspan><tspan baseline-shift="sub" font-size="72%">B</tspan> = 常數</text>
+</svg>
