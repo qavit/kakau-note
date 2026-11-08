@@ -32,6 +32,7 @@
   cookie 契約。
 - [`domain-dns.md`](operations/domain-dns.md)——目前的網域／DNS／主機現況（canonical domain、CNAME
   target、HTTPS、Giscus 綁定）。
+- [`cloudflare-pages-preview.md`](operations/cloudflare-pages-preview.md)——Cloudflare Pages 預覽管線（Direct Upload）、隔離方式、帳戶端設定與 Rollback。
 
 ## audits/
 
