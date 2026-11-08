@@ -1,0 +1,18 @@
+# Cloudflare Pages PREVIEW overlay (Gate 2 of the private-source / public-deploy project).
+#
+# Layered on top of _config.yml ONLY by .github/workflows/cloudflare-preview.yml
+# (`jekyll build --config _config.yml,_config.preview.yml`). The production workflow
+# (pages.yml) never reads this file, so nothing here can change what notes.kakau.tw serves.
+#
+# Purpose: a preview on *.pages.dev must not
+#   - declare notes.kakau.tw as its canonical / sitemap / feed host's identity for its own URLs
+#     (url is overridden at build time via the PREVIEW_URL env, see the workflow), and
+#   - send pageviews or events to the production GoatCounter site, or
+#   - render a giscus box bound to the production discussion category.
+analytics:
+  goatcounter:
+    id: false
+pageviews:
+  provider: false
+comments:
+  provider: false

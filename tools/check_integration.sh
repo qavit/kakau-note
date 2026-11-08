@@ -175,4 +175,14 @@ PINS
   fi
 fi
 
+# Internal repo files must never be published (AGENTS.md was served from production until 2026-11-09).
+if [ -d _site ]; then
+  for f in AGENTS.md DEV_NOTES.md; do
+    if [ -e "_site/$f" ]; then
+      echo "ERROR: internal file $f is published in _site" >&2
+      failures=1
+    fi
+  done
+fi
+
 exit "$failures"

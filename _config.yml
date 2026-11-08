@@ -216,6 +216,7 @@ exclude:
   - "*.gemspec"
   - docs
   - tools
+  - AGENTS.md  # internal agent guidance; must not be published
   - README.md
   - LICENSE
   - purgecss.js
