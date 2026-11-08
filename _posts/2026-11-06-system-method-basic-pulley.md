@@ -12,7 +12,6 @@ $$\require{physics}$$
 
 <link rel="stylesheet" href="/assets/css/posts-custom.css">
 
-<!-- DRAFT：尚未稽核。圖 1–2 已補。完成內容稽核後移除此註解。 -->
 
 水平光滑桌面上放著質量 $5\ \text{kg}$ 的物體 A，桌邊以輕繩跨過定滑輪，懸掛質量 $10\ \text{kg}$ 的物體 B。放手之後，系統的加速度是多少？繩子的張力又是多少？
 

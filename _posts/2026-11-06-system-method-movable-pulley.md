@@ -12,7 +12,6 @@ $$\require{physics}$$
 
 <link rel="stylesheet" href="/assets/css/posts-custom.css">
 
-<!-- DRAFT：尚未稽核。圖 1–2 已補。完成稽核後移除此註解。 -->
 
 前兩篇（[滑車]({% post_url 2026-11-06-system-method-basic-pulley %})、[雙斜面]({% post_url 2026-11-06-system-method-double-incline %})）的連結體，不論是水平桌面加垂掛，還是雙斜面，有一個共同點：繩子拉動的兩個物體**移動的距離一樣多**，所以加速度大小相同，兩條方程式可以直接相加。
 
@@ -200,5 +199,5 @@ $$K = \tfrac12\cdot 3\,\dot q^2 + \tfrac12\cdot 2\,(2\dot q)^2 = \tfrac12\cdot 1
 
 **還值得追問：**
 
-我們已經看了三個例子：滑車、雙斜面、動滑輪。它們的規律能不能寫成一個通用的式子，不論有幾個物體、幾股繩，都適用？未來會嘗試把這三個例子的共同結構整理出來。
+我們已經看了三個例子：滑車、雙斜面、動滑輪。它們的規律能不能寫成一個通用的式子，不論有幾個物體、幾股繩，都適用？[下一篇]({% post_url 2026-11-08-system-method-general-formula %})用一個三物體、兩條繩的連結體，來整理這幾個例子的共同結構。
 

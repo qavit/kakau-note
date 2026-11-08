@@ -12,7 +12,6 @@ $$\require{physics}$$
 
 <link rel="stylesheet" href="/assets/css/posts-custom.css">
 
-<!-- DRAFT：尚未稽核。圖 1–2 已補。完成稽核後移除此註解。 -->
 
 [上一篇]({% post_url 2026-11-06-system-method-basic-pulley %})我們在水平桌面加垂掛物體的滑車問題裡，把整體法還原成「把兩條牛頓方程式相加」，並發現它能成立靠的是兩件事：繩上張力相等，以及兩物體沿共同座標 $q$ 的係數相同。
 
